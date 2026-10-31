@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="it" itemscope itemtype="http://schema.org/ContactPage">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — RegineLand Group | Smart Office Contact Form</title>
+  <meta name="description" content="Contact RegineLand Group. Use our smart form to reach the right office in India, UK, Italy or UAE directly. Request a quote or get in touch with our trade specialists.">
+  <link rel="canonical" href="https://www.regineland.com/contact.html">
+  <link rel="alternate" hreflang="it" href="https://www.regineland.com/it/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,800&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <div class="lang-banner" id="lang-banner">
+    <span>Also available in:</span>
+    <a href="contact.html" hreflang="it">🇮🇹 Italiano</a>
+  </div>
+
+  <header class="site-header solid" id="site-header">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" id="nav-logo"><span class="logo-main">RegineLand</span><span class="logo-tagline">Global Trade &amp; Logistics</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About ▾</a><div class="nav-dropdown"><a href="about.html#history">Our History</a><a href="about.html#network">Global Network</a><a href="about.html#group">Group &amp; Partners</a></div></li>
+        <li><a href="sectors.html" class="nav-link" id="nav-sectors">Sectors</a></li>
+        <li><a href="network.html" class="nav-link" id="nav-network">Global Network</a></li>
+        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
+        <li><a href="contact.html" class="nav-link active" id="nav-contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="nav-lang" id="nav-lang-it">IT</a>
+        <a href="#quote" class="btn btn-gold btn-sm" id="nav-cta">Request a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="page-header" id="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>›</span> <span>Contact</span></nav>
+      <span class="eyebrow page-header-eyebrow">Get in Touch</span>
+      <h1 class="page-header-title">Contact Our<br>Global Team</h1>
+      <p class="page-header-desc">Select your destination office below and your inquiry will be routed directly to the right regional expert. We respond within 2 business days.</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- TRACK SHIPMENT SECTION -->
+    <section class="section-sm section-off" id="track" aria-labelledby="track-heading">
+      <div class="container">
+        <div style="max-width: 640px; margin: 0 auto; text-align: center;">
+          <span class="eyebrow">Quick Service</span>
+          <h2 class="section-title" id="track-heading" style="font-size: 1.8rem; margin-bottom: 12px;">Track a Shipment</h2>
+          <p class="lead" style="margin-bottom: 28px; font-size: 0.95rem;">Enter your booking reference or container number for status updates.</p>
+          <form id="track-form" role="search" aria-label="Shipment tracking">
+            <div style="display: flex; gap: 10px; max-width: 480px; margin: 0 auto;">
+              <input type="text" id="track-input" name="tracking_ref" class="form-input" placeholder="e.g. RGL-2025-0001 or TCKU1234567" aria-label="Tracking reference or container number" style="flex: 1;">
+              <button type="submit" class="btn btn-navy" id="track-btn" style="white-space: nowrap;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                Track
+              </button>
+            </div>
+          </form>
+          <div id="track-result" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SMART CONTACT FORM -->
+    <section class="section" id="quote" aria-labelledby="contact-heading">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 72px; align-items: start;">
+
+          <!-- Left: Info panel -->
+          <div id="contact-info-panel">
+            <span class="eyebrow">Smart Contact Form</span>
+            <div class="divider" aria-hidden="true"></div>
+            <h2 class="section-title" id="contact-heading" style="font-size: 2rem; margin-bottom: 20px;">Your inquiry goes<br>to the right team.</h2>
+            <p class="lead" style="font-size: 0.95rem; margin-bottom: 36px;">Select an office and inquiry type — our system automatically routes your message to the specialist best placed to help you.</p>
+
+            <!-- Office Quick Links -->
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px;" id="office-quicklinks">
+              <div style="display: flex; align-items: center; gap: 14px; padding: 16px 20px; background: var(--off-white); border-radius: var(--radius-md); border: 1px solid var(--border-light); cursor: pointer;" onclick="document.getElementById('contact-office').value='india'">
+                <span style="font-size: 1.6rem;">🇮🇳</span>
+                <div>
+                  <p style="font-size: 0.88rem; font-weight: 700; color: var(--navy);">India — Global HQ</p>
+                  <p style="font-size: 0.78rem; color: var(--text-muted);">india@regineland.com · +91 22 1234 5678</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; padding: 16px 20px; background: var(--off-white); border-radius: var(--radius-md); border: 1px solid var(--border-light); cursor: pointer;" onclick="document.getElementById('contact-office').value='uk'">
+                <span style="font-size: 1.6rem;">🇬🇧</span>
+                <div>
+                  <p style="font-size: 0.88rem; font-weight: 700; color: var(--navy);">United Kingdom — London</p>
+                  <p style="font-size: 0.78rem; color: var(--text-muted);">uk@regineland.com · +44 20 1234 5678</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; padding: 16px 20px; background: var(--off-white); border-radius: var(--radius-md); border: 1px solid var(--border-light); cursor: pointer;" onclick="document.getElementById('contact-office').value='italy'">
+                <span style="font-size: 1.6rem;">🇮🇹</span>
+                <div>
+                  <p style="font-size: 0.88rem; font-weight: 700; color: var(--navy);">Italy — Milan / Genoa</p>
+                  <p style="font-size: 0.78rem; color: var(--text-muted);">italy@regineland.com · +39 02 1234 5678</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; padding: 16px 20px; background: var(--off-white); border-radius: var(--radius-md); border: 1px solid var(--border-light); cursor: pointer;" onclick="document.getElementById('contact-office').value='uae'">
+                <span style="font-size: 1.6rem;">🇦🇪</span>
+                <div>
+                  <p style="font-size: 0.88rem; font-weight: 700; color: var(--navy);">UAE — Dubai</p>
+                  <p style="font-size: 0.78rem; color: var(--text-muted);">uae@regineland.com · +971 4 123 4567</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="background: var(--sky); border-radius: var(--radius-md); padding: 20px 24px; border-left: 4px solid var(--blue);">
+              <p style="font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px;">Response Commitment</p>
+              <p style="font-size: 0.88rem; color: var(--navy); line-height: 1.6;">We respond to all B2B trade inquiries within <strong>2 business days</strong>. For urgent shipments, call our 24/7 operations line: <a href="tel:+912212345699" style="color: var(--blue); font-weight: 600;">+91 22 1234 5699</a></p>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="smart-form-wrap reveal" id="contact-form-wrap">
+            <h3 style="font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 28px;">Send Us a Message</h3>
+
+            <form id="contact-form" novalidate aria-label="Contact form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="contact-first">First Name *</label>
+                  <input type="text" class="form-input" id="contact-first" name="first_name" placeholder="Your first name" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-last">Last Name *</label>
+                  <input type="text" class="form-input" id="contact-last" name="last_name" placeholder="Your last name" required autocomplete="family-name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Business Email *</label>
+                  <input type="email" class="form-input" id="contact-email" name="email" placeholder="you@company.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-phone">Phone (with country code)</label>
+                  <input type="tel" class="form-input" id="contact-phone" name="phone" placeholder="+44 20 1234 5678" autocomplete="tel">
+                </div>
+                <div class="form-group full">
+                  <label class="form-label" for="contact-company">Company / Organisation *</label>
+                  <input type="text" class="form-input" id="contact-company" name="company" placeholder="Your company name" required autocomplete="organization">
+                </div>
+
+                <!-- SMART: Office Selector -->
+                <div class="form-group full">
+                  <label class="form-label" for="contact-office">Select Destination Office *</label>
+                  <select class="form-select" id="contact-office" name="office" required>
+                    <option value="" disabled selected>— Choose the office to contact —</option>
+                    <option value="india">🇮🇳 India — Global HQ (Mumbai / Delhi)</option>
+                    <option value="uk">🇬🇧 United Kingdom — London</option>
+                    <option value="italy">🇮🇹 Italy — Milan / Genoa</option>
+                    <option value="uae">🇦🇪 UAE — Dubai</option>
+                    <option value="general">🌍 General Inquiry (no preference)</option>
+                  </select>
+                  <p id="office-email-preview" style="display:none; margin-top:6px; font-size:0.78rem; color:var(--blue); font-weight:500;"></p>
+                </div>
+
+                <div class="form-group full">
+                  <label class="form-label" for="contact-type">Inquiry Type *</label>
+                  <select class="form-select" id="contact-type" name="inquiry_type" required>
+                    <option value="" disabled selected>— Select inquiry type —</option>
+                    <option value="quote">Request a Freight / Trade Quote</option>
+                    <option value="healthcare">Healthcare &amp; Medical Supply Inquiry</option>
+                    <option value="agrifood">Agri-Food &amp; Beverage Export</option>
+                    <option value="cargo">General Cargo / Industrial Goods</option>
+                    <option value="customs">Customs Clearance</option>
+                    <option value="partnership">Partnership / Business Development</option>
+                    <option value="compliance">Regulatory / Compliance Question</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-origin">Origin Country</label>
+                  <input type="text" class="form-input" id="contact-origin" name="origin" placeholder="e.g. India">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-dest">Destination Country</label>
+                  <input type="text" class="form-input" id="contact-dest" name="destination" placeholder="e.g. Italy">
+                </div>
+
+                <div class="form-group full">
+                  <label class="form-label" for="contact-message">Message / Details *</label>
+                  <textarea class="form-textarea" id="contact-message" name="message" placeholder="Describe your requirement — commodity, volume, Incoterms, timeline, or any specific compliance needs…" required rows="5"></textarea>
+                </div>
+
+                <div class="form-group full">
+                  <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 0.82rem; color: var(--text-secondary);">
+                    <input type="checkbox" id="contact-gdpr" name="gdpr" required style="margin-top: 2px; accent-color: var(--navy);">
+                    <span>I agree to the processing of my personal data in accordance with RegineLand Group's <a href="#" style="color: var(--blue);">Privacy Policy</a>. *</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="form-submit" id="contact-submit">
+                Send Message
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-grid">
+          <div class="footer-brand"><a href="index.html" class="nav-logo footer-logo"><span class="logo-main">RegineLand</span><span class="logo-tagline">Global Trade &amp; Logistics</span></a><p class="footer-desc">Your trusted bridge for global trade between India, Europe, and the world.</p><div class="footer-certifications"><span class="footer-cert-badge">ISO 9001</span><span class="footer-cert-badge">ISO 13485</span><span class="footer-cert-badge">CE Ready</span><span class="footer-cert-badge">FSSAI</span></div></div>
+          <div class="footer-col"><h4 class="footer-col-title">Company</h4><nav class="footer-links"><a href="about.html">About Us</a><a href="sectors.html">Sectors</a><a href="network.html">Global Network</a><a href="resources.html">Resources</a></nav></div>
+          <div class="footer-col"><h4 class="footer-col-title">Sectors</h4><nav class="footer-links"><a href="sectors.html#healthcare">Healthcare &amp; Medical</a><a href="sectors.html#agrifood">Agri-Food</a><a href="sectors.html#cargo">General Cargo</a><a href="sectors.html#logistics">Integrated Logistics</a></nav></div>
+          <div class="footer-col"><h4 class="footer-col-title">Offices</h4><nav class="footer-links"><a href="network.html#office-india">🇮🇳 India (HQ)</a><a href="network.html#office-uk">🇬🇧 United Kingdom</a><a href="network.html#office-italy">🇮🇹 Italy</a><a href="network.html#office-uae">🇦🇪 UAE</a></nav></div>
+          <div class="footer-col"><h4 class="footer-col-title">Contact</h4><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><a href="mailto:info@regineland.com">info@regineland.com</a></span></div></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. All rights reserved.</p><nav class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></nav></div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+

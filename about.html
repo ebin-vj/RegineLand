@@ -1,98 +1,120 @@
 <!DOCTYPE html>
-<html lang="en-US" itemscope itemtype="http://schema.org/WebPage">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>About Us — RegineLand Group</title>
-  <meta name="description" content="Learn about RegineLand Group — a diversified conglomerate spanning beauty, logistics, food, and healthcare, united by craft, clarity, and character.">
-  <meta property="og:title" content="About RegineLand Group">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.regineland.com/about">
+  <title>About Us — RegineLand Group | History, Vision & Global Network</title>
+  <meta name="description" content="Learn about RegineLand Group — a multinational trade and logistics company with offices in India, UK, Italy, and UAE, connecting global markets since our founding.">
+  <link rel="canonical" href="https://www.regineland.com/about.html">
+  <link rel="alternate" hreflang="it" href="https://www.regineland.com/it/about.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=League+Spartan:wght@400;700&family=Lexend:wght@300;400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,800&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="site-header" id="site-header">
-    <nav class="navbar" id="navbar" aria-label="Main Navigation">
-      <a href="index.html" class="nav-logo" id="nav-logo" aria-label="RegineLand Group Home">
-        <span class="logo-text">RegineLand</span>
-        <span class="logo-sub">GROUP</span>
-      </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
+  <div class="lang-banner" id="lang-banner">
+    <span>Also available in:</span>
+    <a href="it/about.html" hreflang="it">🇮🇹 Italiano</a>
+  </div>
+
+  <header class="site-header solid" id="site-header">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" id="nav-logo"><span class="logo-main">RegineLand</span><span class="logo-tagline">Global Trade &amp; Logistics</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
       <ul class="nav-menu" id="nav-menu" role="list">
         <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
         <li><a href="about.html" class="nav-link active" id="nav-about">About</a></li>
-        <li><a href="brands.html" class="nav-link" id="nav-brands">Brands</a></li>
+        <li><a href="sectors.html" class="nav-link" id="nav-sectors">Sectors</a></li>
+        <li><a href="network.html" class="nav-link" id="nav-network">Global Network</a></li>
+        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
         <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
       </ul>
+      <div class="nav-actions">
+        <a href="it/about.html" class="nav-lang" id="nav-lang-it">IT</a>
+        <a href="contact.html#quote" class="btn btn-gold btn-sm" id="nav-cta">Request a Quote</a>
+      </div>
     </nav>
   </header>
 
+  <div class="page-header" id="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>›</span> <span>About Us</span></nav>
+      <span class="eyebrow page-header-eyebrow">Who We Are</span>
+      <h1 class="page-header-title">A multinational built on<br>trust and trade expertise.</h1>
+      <p class="page-header-desc">RegineLand Group was founded on a single conviction — that the world's best products deserve global markets, and that getting there requires a partner who understands both the trade and the compliance.</p>
+    </div>
+  </div>
+
   <main>
 
-    <!-- PAGE HERO -->
-    <section class="page-hero" id="about-page-hero">
-      <span class="eyebrow">Our Story</span>
-      <h1 class="page-hero-title">A group built on<br>purpose and pride.</h1>
-      <p class="page-hero-desc">RegineLand Group is more than a collection of brands. It is a living philosophy — that quality should be the norm, not the exception.</p>
-    </section>
-
     <!-- MISSION & VISION -->
-    <section class="section" id="mission-vision">
+    <section class="section" id="history" aria-labelledby="mv-heading">
       <div class="container">
-        <div class="mv-grid reveal">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 80px;" id="mv-grid" class="reveal">
           <div class="mv-card" id="mv-mission">
-            <p class="mv-card-label">Our Mission</p>
-            <h2 class="mv-card-title">Deliver excellence.<br>Always.</h2>
-            <p class="mv-card-body">Our mission is to build and nurture brands that make a genuine difference — in the products they deliver, the values they uphold, and the communities they serve. We exist to raise the bar across every sector we enter.</p>
+            <div class="mv-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <p class="mv-label">Our Mission</p>
+            <h2 class="mv-title" id="mv-heading">Be the most trusted<br>bridge in global trade.</h2>
+            <p class="mv-body">We exist to eliminate the complexity of international trade — handling compliance, logistics, documentation, and market access so our clients can focus on growing their business, not navigating bureaucracy.</p>
           </div>
           <div class="mv-card" id="mv-vision">
-            <p class="mv-card-label">Our Vision</p>
-            <h2 class="mv-card-title">Lead with integrity.<br>Grow with purpose.</h2>
-            <p class="mv-card-body">We envision a world where businesses are measured not only by profit, but by the positive mark they leave. RegineLand Group aspires to be a benchmark for integrity, innovation, and lasting impact across global markets.</p>
+            <div class="mv-card-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <p class="mv-label">Our Vision</p>
+            <h2 class="mv-title">Lead the India–Europe<br>trade corridor.</h2>
+            <p class="mv-body">To become the definitive logistics and trade partner for businesses moving goods between India and the global market — recognised for reliability, regulatory expertise, and human relationships that last.</p>
           </div>
         </div>
 
-        <!-- WHO WE ARE EXTENDED -->
-        <div class="section-grid two-col reveal" id="who-we-are-extended">
-          <div id="who-text">
-            <span class="eyebrow">Who We Are</span>
-            <h2 class="section-title" style="font-size: clamp(1.8rem, 3vw, 2.6rem);">RegineLand is a philosophy, not just a portfolio.</h2>
-            <p class="body-text">Founded on the belief that every person deserves access to quality — in beauty, in nutrition, in health, in daily logistics — RegineLand Group was created to bridge the gap between aspiration and accessibility.</p>
-            <p class="body-text">We are a diverse team of builders, thinkers, and makers. Each brand we create is a distinct voice, with its own personality and audience. But beneath every brand lies the same foundation: rigorous standards, human-centred design, and relentless improvement.</p>
-            <p class="body-text">From beauty to logistics, from food to healthcare — we are shaping a world where quality is not a promise. It's a culture.</p>
+        <!-- History & Timeline -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;" id="history-grid">
+          <div id="history-text">
+            <span class="eyebrow">Our History</span>
+            <div class="divider" aria-hidden="true"></div>
+            <h2 class="section-title" style="font-size: clamp(1.8rem, 3vw, 2.4rem);">From Mumbai to Milan<br>and Beyond</h2>
+            <p class="lead" style="margin-bottom: 20px;">RegineLand Group began as a focused trade facilitation company connecting Indian manufacturers with European buyers — specifically in the healthcare and agri-food sectors where compliance and trust are non-negotiable.</p>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">Starting with a small but highly experienced team of trade specialists in Mumbai, we built our reputation shipment by shipment — getting the documentation right, keeping deadlines, and solving problems before they reached our clients.</p>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">As trust grew, so did our network. We established our first European office in Milan — a strategic gateway to the Italian and Mediterranean markets. A London presence followed, giving us deep access to the UK market and Heathrow-based air freight capabilities.</p>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.8;">Today, RegineLand Group operates across four countries with a team of over 80 trade, logistics, and compliance specialists — handling thousands of shipments annually across three sectors.</p>
           </div>
-          <div id="who-timeline">
-            <span class="eyebrow">Our Journey</span>
-            <div class="timeline" id="about-timeline">
-              <div class="timeline-item" id="timeline-founding">
+          <div id="history-timeline">
+            <div class="timeline reveal">
+              <div class="timeline-item" id="tl-founding">
+                <div class="timeline-dot active" aria-hidden="true"></div>
                 <p class="timeline-year">The Beginning</p>
                 <h3 class="timeline-event">RegineLand Group Founded</h3>
-                <p class="timeline-detail">The group was established with a clear vision — to build a multi-brand conglomerate that stands for quality, authenticity, and long-term value creation.</p>
+                <p class="timeline-detail">Established in Mumbai with a core team of trade finance and logistics specialists, focused on India–Italy agri-food exports.</p>
               </div>
-              <div class="timeline-item" id="timeline-beauty">
-                <p class="timeline-year">Phase 1</p>
-                <h3 class="timeline-event">Beauty Sector Launch</h3>
-                <p class="timeline-detail">RegineLand's first brands enter the beauty space, bringing premium formulations and artisan craftsmanship to a wider audience.</p>
+              <div class="timeline-item" id="tl-healthcare">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <p class="timeline-year">Phase 1: Expansion</p>
+                <h3 class="timeline-event">Healthcare Sector Launch</h3>
+                <p class="timeline-detail">Secured first medical device export contracts with CE-certification support. Established relationships with ISO 13485 certified Indian manufacturers.</p>
               </div>
-              <div class="timeline-item" id="timeline-expansion">
-                <p class="timeline-year">Phase 2</p>
-                <h3 class="timeline-event">Multi-Sector Expansion</h3>
-                <p class="timeline-detail">Expanding into logistics, food, and healthcare — RegineLand broadens its footprint while maintaining its commitment to quality across all verticals.</p>
+              <div class="timeline-item" id="tl-milan">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <p class="timeline-year">Phase 2: Europe</p>
+                <h3 class="timeline-event">Milan Office Opens</h3>
+                <p class="timeline-detail">First European office established in Milan — creating direct market access to Italy and Southern Europe. Port agency desk added in Genoa.</p>
               </div>
-              <div class="timeline-item" id="timeline-future">
-                <p class="timeline-year">The Road Ahead</p>
-                <h3 class="timeline-event">Building for the Future</h3>
-                <p class="timeline-detail">With new brands in development, RegineLand Group continues to grow — guided always by craft, clarity, and character.</p>
+              <div class="timeline-item" id="tl-london">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <p class="timeline-year">Phase 3: UK Market</p>
+                <h3 class="timeline-event">London Presence Established</h3>
+                <p class="timeline-detail">UK entity incorporated following Brexit to maintain frictionless customs clearance operations. Heathrow air freight hub activated.</p>
+              </div>
+              <div class="timeline-item" id="tl-dubai">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <p class="timeline-year">Phase 4: Middle East</p>
+                <h3 class="timeline-event">Dubai Hub Opened</h3>
+                <p class="timeline-detail">DMCC-registered Dubai office serves as a re-export and transshipment gateway connecting India with the GCC, Africa, and global markets.</p>
+              </div>
+              <div class="timeline-item" id="tl-today">
+                <div class="timeline-dot active" aria-hidden="true"></div>
+                <p class="timeline-year">Present</p>
+                <h3 class="timeline-event">Full Multinational Operations</h3>
+                <p class="timeline-detail">80+ specialists, 6 offices, 40+ countries served. Continuing to grow with a focus on digital trade tools and sustainability-conscious logistics.</p>
               </div>
             </div>
           </div>
@@ -101,110 +123,97 @@
     </section>
 
     <!-- VALUES -->
-    <section class="section sectors-section" id="values-section">
+    <section class="section section-off" id="values" aria-labelledby="values-heading">
       <div class="container">
-        <div class="section-header centered" id="values-header">
+        <div class="section-header centered reveal">
           <span class="eyebrow">What Drives Us</span>
-          <h2 class="section-title">Core Values</h2>
+          <div class="divider divider-center" aria-hidden="true"></div>
+          <h2 class="section-title" id="values-heading">Built on Four Core Values</h2>
         </div>
-        <div class="sectors-grid" id="values-grid">
-          <article class="sector-card reveal reveal-delay-1" id="value-quality">
-            <div class="sector-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <h3 class="sector-name">Quality First</h3>
-            <p class="sector-desc">Every product, service, and interaction we create is held to the highest standard. We do not compromise on quality — it is our most non-negotiable commitment.</p>
-          </article>
-          <article class="sector-card reveal reveal-delay-2" id="value-authenticity">
-            <div class="sector-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-              </svg>
-            </div>
-            <h3 class="sector-name">Authenticity</h3>
-            <p class="sector-desc">We are genuine in our purpose, transparent in our operations, and honest with our customers. Authenticity is what builds lasting trust.</p>
-          </article>
-          <article class="sector-card reveal reveal-delay-3" id="value-innovation">
-            <div class="sector-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="8" x2="12" y2="12"/>
-                <line x1="12" y1="16" x2="12.01" y2="16"/>
-              </svg>
-            </div>
-            <h3 class="sector-name">Innovation</h3>
-            <p class="sector-desc">We constantly challenge assumptions and explore new possibilities. Innovation is not a buzzword here — it is a daily practice embedded in how we think and build.</p>
-          </article>
-          <article class="sector-card reveal reveal-delay-4" id="value-impact">
-            <div class="sector-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
-            <h3 class="sector-name">Community Impact</h3>
-            <p class="sector-desc">Business is most meaningful when it creates positive ripples beyond profit. We invest in communities, support local ecosystems, and think long-term.</p>
-          </article>
+        <div style="display: grid; grid-template-columns: repeat(4,1fr); gap: 20px;" id="values-grid">
+          <div class="mv-card reveal" id="value-trust" style="text-align:center;">
+            <div class="mv-card-icon" style="margin: 0 auto 20px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <p class="mv-label">Value 01</p>
+            <h3 class="mv-title">Trust</h3>
+            <p class="mv-body">Every client relationship is built on transparency, honesty, and accountability. We never overpromise — we deliver.</p>
+          </div>
+          <div class="mv-card reveal d1" id="value-compliance" style="text-align:center;">
+            <div class="mv-card-icon" style="margin: 0 auto 20px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+            <p class="mv-label">Value 02</p>
+            <h3 class="mv-title">Compliance</h3>
+            <p class="mv-body">Regulatory adherence is not optional in healthcare or food. We treat every certification and standard as a baseline, not a checkbox.</p>
+          </div>
+          <div class="mv-card reveal d2" id="value-precision" style="text-align:center;">
+            <div class="mv-card-icon" style="margin: 0 auto 20px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <p class="mv-label">Value 03</p>
+            <h3 class="mv-title">Precision</h3>
+            <p class="mv-body">In global logistics, the difference between 99% and 100% matters. We are obsessed with accuracy in every document, date, and detail.</p>
+          </div>
+          <div class="mv-card reveal d3" id="value-partnership" style="text-align:center;">
+            <div class="mv-card-icon" style="margin: 0 auto 20px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <p class="mv-label">Value 04</p>
+            <h3 class="mv-title">Partnership</h3>
+            <p class="mv-body">We are not a transactional service provider. We are a long-term partner invested in the growth of every client's business.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROUP & PARTNERSHIPS -->
+    <section class="section" id="group" aria-labelledby="group-heading">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <span class="eyebrow">Our Ecosystem</span>
+          <div class="divider divider-center" aria-hidden="true"></div>
+          <h2 class="section-title" id="group-heading">Group &amp; Strategic Partnerships</h2>
+          <p class="lead" style="max-width:560px;">RegineLand Group works alongside a carefully selected network of affiliated companies and strategic partners to offer complete trade solutions.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;" id="partners-grid">
+          <div class="mv-card reveal" id="partner-1">
+            <p class="mv-label">Affiliated Company</p>
+            <h3 class="mv-title">RegineLand Health India</h3>
+            <p class="mv-body">Our healthcare vertical — specialising in medical device sourcing, regulatory affairs, and direct supply contracts with Indian manufacturers certified to ISO 13485.</p>
+          </div>
+          <div class="mv-card reveal d1" id="partner-2">
+            <p class="mv-label">Affiliated Company</p>
+            <h3 class="mv-title">RegineLand Agri Exports</h3>
+            <p class="mv-body">A dedicated agri-food trading company focused on Indian origin commodities — spices, grains, and specialty produce — with APEDA registration and export licensing.</p>
+          </div>
+          <div class="mv-card reveal d2" id="partner-3">
+            <p class="mv-label">Strategic Partner</p>
+            <h3 class="mv-title">European Distribution Network</h3>
+            <p class="mv-body">A network of bonded warehouses and last-mile distribution partners across Italy, Germany, France, and Spain — enabling pan-European fulfilment from a single entry point.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="section contact-teaser" id="about-cta">
-      <div class="container">
-        <div class="contact-teaser-inner reveal">
-          <h2 class="section-title">Interested in partnering<br>with RegineLand?</h2>
-          <p class="body-text">We're always open to conversations with like-minded people and organisations who share our passion for quality and purpose.</p>
-          <a href="contact.html" class="btn btn-primary" id="about-contact-cta">Get in Touch</a>
+    <section class="section-sm section-dark" id="about-cta">
+      <div class="container" style="text-align:center;">
+        <h2 class="section-title section-title-light reveal" style="margin-bottom:16px;">Want to know more<br>about RegineLand Group?</h2>
+        <p class="lead lead-light reveal d1" style="max-width:440px; margin:0 auto 32px;">Talk to one of our trade specialists and discover how we can help move your business forward.</p>
+        <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;" class="reveal d2">
+          <a href="contact.html" class="btn btn-gold btn-lg" id="about-cta-contact">Contact Us</a>
+          <a href="sectors.html" class="btn btn-outline-white" id="about-cta-sectors">Our Sectors</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" id="site-footer">
+  <footer class="site-footer" id="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-grid" id="footer-grid">
-        <div class="footer-brand" id="footer-brand">
-          <a href="index.html" class="nav-logo footer-logo" aria-label="RegineLand Group Home">
-            <span class="logo-text">RegineLand</span>
-            <span class="logo-sub">GROUP</span>
-          </a>
-          <p class="footer-tagline">Quality is not a promise — it's a culture.</p>
-        </div>
-        <div class="footer-links" id="footer-links">
-          <h4 class="footer-heading">Navigate</h4>
-          <ul role="list">
-            <li><a href="index.html" id="footer-nav-home">Home</a></li>
-            <li><a href="about.html" id="footer-nav-about">About</a></li>
-            <li><a href="brands.html" id="footer-nav-brands">Brands</a></li>
-            <li><a href="contact.html" id="footer-nav-contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-sectors" id="footer-sectors">
-          <h4 class="footer-heading">Sectors</h4>
-          <ul role="list">
-            <li><a href="brands.html#beauty" id="footer-sector-beauty">Beauty</a></li>
-            <li><a href="brands.html#logistics" id="footer-sector-logistics">Logistics</a></li>
-            <li><a href="brands.html#food" id="footer-sector-food">Food</a></li>
-            <li><a href="brands.html#healthcare" id="footer-sector-healthcare">Healthcare</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact" id="footer-contact-col">
-          <h4 class="footer-heading">Contact</h4>
-          <p><a href="mailto:info@regineland.com" id="footer-email">info@regineland.com</a></p>
-          <p><a href="https://www.regineland.com" target="_blank" rel="noopener" id="footer-website">www.regineland.com</a></p>
+      <div class="footer-top">
+        <div class="footer-grid">
+          <div class="footer-brand"><a href="index.html" class="nav-logo footer-logo"><span class="logo-main">RegineLand</span><span class="logo-tagline">Global Trade &amp; Logistics</span></a><p class="footer-desc">Your trusted bridge for global trade between India, Europe, and the world.</p><div class="footer-certifications"><span class="footer-cert-badge">ISO 9001</span><span class="footer-cert-badge">ISO 13485</span><span class="footer-cert-badge">CE Ready</span><span class="footer-cert-badge">FSSAI</span></div></div>
+          <div class="footer-col"><h4 class="footer-col-title">Company</h4><nav class="footer-links"><a href="about.html">About Us</a><a href="sectors.html">Sectors</a><a href="network.html">Global Network</a><a href="resources.html">Resources</a></nav></div>
+          <div class="footer-col"><h4 class="footer-col-title">Sectors</h4><nav class="footer-links"><a href="sectors.html#healthcare">Healthcare &amp; Medical</a><a href="sectors.html#agrifood">Agri-Food</a><a href="sectors.html#cargo">General Cargo</a><a href="sectors.html#logistics">Integrated Logistics</a></nav></div>
+          <div class="footer-col"><h4 class="footer-col-title">Offices</h4><nav class="footer-links"><a href="network.html#office-india">🇮🇳 India (HQ)</a><a href="network.html#office-uk">🇬🇧 United Kingdom</a><a href="network.html#office-italy">🇮🇹 Italy</a><a href="network.html#office-uae">🇦🇪 UAE</a></nav></div>
+          <div class="footer-col"><h4 class="footer-col-title">Contact</h4><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><a href="mailto:info@regineland.com">info@regineland.com</a></span></div></div>
         </div>
       </div>
-      <div class="footer-bottom" id="footer-bottom">
-        <p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. All rights reserved.</p>
-        <p class="footer-sub">Craft · Clarity · Character</p>
-      </div>
+      <div class="footer-bottom"><p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. All rights reserved.</p><nav class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></nav></div>
     </div>
   </footer>
 

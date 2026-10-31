@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-US" itemscope itemtype="http://schema.org/WebPage">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>RegineLand Group</title>
-  <meta name="description" content="RegineLand Group — each brand carries its own identity yet every one of them speaks the same language: craft, clarity, and character. From beauty to logistics, from food to healthcare, we are shaping a world where quality is not a promise — it's a culture.">
-  <meta property="og:title" content="RegineLand Group">
+  <title>RegineLand Group — Global Logistics & Trade | India · Europe · World</title>
+  <meta name="description" content="RegineLand Group is your trusted bridge for global trade — healthcare & medical supplies, agri-food, and general cargo logistics between India, UK, Italy and the world.">
+  <meta name="keywords" content="global logistics, India Europe trade, medical supply chain, agri food export, cargo logistics, international freight, healthcare logistics India">
+  <meta property="og:title" content="RegineLand Group — Global Logistics & Trade">
+  <meta property="og:description" content="Your Global Logistics & Trade Bridge between India, Europe, and the World.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.regineland.com/">
-  <meta property="og:description" content="From beauty to logistics, from food to healthcare, we are shaping a world where quality is not a promise — it's a culture.">
-  <meta itemprop="name" content="RegineLand Group">
-  <meta itemprop="description" content="RegineLand Group — each brand carries its own identity yet every one of them speaks the same language: craft, clarity, and character.">
-
-  <!-- Google Fonts -->
+  <link rel="canonical" href="https://www.regineland.com/">
+  <link rel="alternate" hreflang="en" href="https://www.regineland.com/">
+  <link rel="alternate" hreflang="it" href="https://www.regineland.com/it/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=League+Spartan:wght@400;700&family=Lexend:wght@300;400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- =========== NAVIGATION =========== -->
-  <header class="site-header" id="site-header">
-    <nav class="navbar" id="navbar" aria-label="Main Navigation">
-      <a href="index.html" class="nav-logo" id="nav-logo" aria-label="RegineLand Group Home">
-        <span class="logo-text">RegineLand</span>
-        <span class="logo-sub">GROUP</span>
+  <!-- Language Bar -->
+  <div class="lang-banner" id="lang-banner" role="navigation" aria-label="Language selection">
+    <span>Also available in:</span>
+    <a href="it/index.html" id="lang-it" hreflang="it">🇮🇹 Italiano</a>
+    <a href="#" id="lang-en" style="color:rgba(255,255,255,0.4);cursor:default;">🇬🇧 English</a>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header transparent" id="site-header">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" id="nav-logo" aria-label="RegineLand Group — Home">
+        <span class="logo-main">RegineLand</span>
+        <span class="logo-tagline">Global Trade &amp; Logistics</span>
       </a>
 
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -38,274 +44,521 @@
 
       <ul class="nav-menu" id="nav-menu" role="list">
         <li><a href="index.html" class="nav-link active" id="nav-home">Home</a></li>
-        <li><a href="about.html" class="nav-link" id="nav-about">About</a></li>
-        <li><a href="brands.html" class="nav-link" id="nav-brands">Brands</a></li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link" id="nav-about">About ▾</a>
+          <div class="nav-dropdown">
+            <a href="about.html#history" id="nav-history">Our History &amp; Vision</a>
+            <a href="about.html#network" id="nav-network-link">Global Network</a>
+            <a href="about.html#group" id="nav-group">Group &amp; Partnerships</a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="about.html#team" id="nav-team">Leadership Team</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="sectors.html" class="nav-link" id="nav-sectors">Sectors ▾</a>
+          <div class="nav-dropdown">
+            <a href="sectors.html#healthcare" id="nav-healthcare">🏥 Healthcare &amp; Medical</a>
+            <a href="sectors.html#agrifood" id="nav-agrifood">🌾 Agri-Food &amp; Beverages</a>
+            <a href="sectors.html#cargo" id="nav-cargo">📦 General Cargo &amp; Industrial</a>
+            <a href="sectors.html#logistics" id="nav-logistics-link">🚢 Integrated Logistics</a>
+          </div>
+        </li>
+        <li><a href="network.html" class="nav-link" id="nav-network">Global Network</a></li>
+        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
         <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <a href="it/index.html" class="nav-lang" id="nav-lang-it" hreflang="it" title="Versione Italiana">IT</a>
+        <a href="contact.html#quote" class="btn btn-gold btn-sm" id="nav-cta">Request a Quote</a>
+      </div>
     </nav>
   </header>
 
   <main>
 
-    <!-- =========== HERO SECTION =========== -->
-    <section class="hero" id="hero" aria-label="Hero Section">
-      <div class="hero-bg" id="hero-bg" aria-hidden="true"></div>
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-content" id="hero-content">
-        <div class="hero-eyebrow" id="hero-eyebrow">Who We Are</div>
-        <h1 class="hero-title" id="hero-title">
-          Shaping a world<br>
-          where <span class="hero-accent">quality</span><br>
-          is a culture.
-        </h1>
-        <p class="hero-subtitle" id="hero-subtitle">
-          RegineLand — each brand carries its own identity yet every one of them speaks the same language: craft, clarity, and character.
-        </p>
-        <div class="hero-actions" id="hero-actions">
-          <a href="brands.html" class="btn btn-primary" id="hero-cta-brands">Explore Our Brands</a>
-          <a href="about.html" class="btn btn-outline" id="hero-cta-about">Learn More</a>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" aria-label="Hero — Global Logistics & Trade">
+
+      <!-- Slides -->
+      <div class="hero-slide active" id="hero-slide-1" style="background-image: url('assets/hero_logistics.png');" aria-hidden="true"></div>
+      <div class="hero-slide" id="hero-slide-2" style="background-image: url('assets/hero_medical.png');" aria-hidden="true"></div>
+      <div class="hero-slide" id="hero-slide-3" style="background-image: url('assets/hero_food_agri.png');" aria-hidden="true"></div>
+
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-inner">
+          <div class="hero-badge" id="hero-badge">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            India · Europe · The World
+          </div>
+          <h1 class="hero-title" id="hero-title">
+            Your Global Logistics<br>&amp; Trade Bridge between<br>
+            <em class="hero-title-accent">India, Europe</em><br>and the World
+          </h1>
+          <p class="hero-subtitle" id="hero-subtitle">
+            RegineLand Group connects markets across continents — delivering compliant, reliable, and efficient trade solutions in healthcare, agri-food, and general cargo.
+          </p>
+          <div class="hero-actions" id="hero-actions">
+            <a href="contact.html#quote" class="btn btn-gold btn-lg" id="hero-cta-quote">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              Request a Quote
+            </a>
+            <a href="sectors.html" class="btn btn-outline-white" id="hero-cta-sectors">Our Sectors</a>
+            <a href="network.html" class="btn btn-outline-white" id="hero-cta-network">Our Offices</a>
+          </div>
+          <!-- Stats -->
+          <div class="hero-stats" id="hero-stats" role="list">
+            <div class="hero-stat" role="listitem" id="stat-experience">
+              <div class="hero-stat-num" data-count="15">15+</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+            <div class="hero-stat" role="listitem" id="stat-cargo">
+              <div class="hero-stat-num" data-count="500">500K+</div>
+              <div class="hero-stat-label">Tons Cargo Handled</div>
+            </div>
+            <div class="hero-stat" role="listitem" id="stat-countries">
+              <div class="hero-stat-num" data-count="40">40+</div>
+              <div class="hero-stat-label">Countries Served</div>
+            </div>
+            <div class="hero-stat" role="listitem" id="stat-offices">
+              <div class="hero-stat-num" data-count="6">6</div>
+              <div class="hero-stat-label">Direct Offices</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero-scroll-indicator" id="hero-scroll" aria-label="Scroll down">
-        <span class="scroll-dot"></span>
+
+      <!-- Slider controls -->
+      <div class="hero-controls" id="hero-controls" role="tablist" aria-label="Hero slideshow">
+        <button class="hero-dot active" id="hero-dot-1" role="tab" aria-selected="true" aria-label="Slide 1: Ports &amp; Logistics"></button>
+        <button class="hero-dot" id="hero-dot-2" role="tab" aria-selected="false" aria-label="Slide 2: Healthcare &amp; Medical"></button>
+        <button class="hero-dot" id="hero-dot-3" role="tab" aria-selected="false" aria-label="Slide 3: Agri-Food &amp; Beverages"></button>
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="hero-scroll" id="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
       </div>
     </section>
 
-    <!-- =========== WHO WE ARE =========== -->
-    <section class="section about-intro" id="about-intro">
-      <div class="container">
-        <div class="section-grid two-col">
-          <div class="col-text" id="about-text-col">
-            <span class="eyebrow">About RegineLand</span>
-            <h2 class="section-title">Built on craft.<br>Driven by character.</h2>
-            <p class="body-text">
-              RegineLand is a diversified group of brands united by one defining philosophy — that excellence should be accessible, authentic, and enduring. From beauty to logistics, from food to healthcare, we are shaping a world where quality is not a promise, it's a culture.
-            </p>
-            <p class="body-text">
-              Every brand under our umbrella carries its own identity, voice, and purpose. Yet every one of them speaks the same language: craft, clarity, and character.
-            </p>
-            <a href="about.html" class="btn btn-primary btn-sm" id="about-learn-more">Our Story</a>
-          </div>
-          <div class="col-visual" id="about-visual-col">
-            <div class="visual-card" id="about-visual-card">
-              <div class="stat-stack" id="stat-stack">
-                <div class="stat-item" id="stat-brands">
-                  <span class="stat-number">10+</span>
-                  <span class="stat-label">Brands</span>
-                </div>
-                <div class="stat-divider" aria-hidden="true"></div>
-                <div class="stat-item" id="stat-sectors">
-                  <span class="stat-number">4</span>
-                  <span class="stat-label">Sectors</span>
-                </div>
-                <div class="stat-divider" aria-hidden="true"></div>
-                <div class="stat-item" id="stat-mission">
-                  <span class="stat-number">1</span>
-                  <span class="stat-label">Mission</span>
-                </div>
-              </div>
-              <p class="visual-card-quote" id="visual-card-quote">"Quality is not a promise — it's a culture."</p>
-            </div>
-          </div>
+    <!-- ============ STATS BAND ============ -->
+    <div class="stats-band" id="stats-band" role="region" aria-label="Company statistics">
+      <div class="stats-band-inner">
+        <div class="stat-block reveal" id="stat-block-exp">
+          <div class="stat-big" data-count="15">15+</div>
+          <div class="stat-desc">Years of International Trade</div>
         </div>
-      </div>
-    </section>
-
-    <!-- =========== SECTORS =========== -->
-    <section class="section sectors-section" id="sectors-section">
-      <div class="container">
-        <div class="section-header centered" id="sectors-header">
-          <span class="eyebrow">What We Do</span>
-          <h2 class="section-title">Our Sectors</h2>
-          <p class="section-desc">From everyday essentials to specialized industries, RegineLand Group spans a diverse portfolio of sectors — each one led with expertise and passion.</p>
+        <div class="stat-block reveal d1" id="stat-block-cargo">
+          <div class="stat-big" data-count="500">500K+</div>
+          <div class="stat-desc">Tons of Cargo Handled</div>
         </div>
-        <div class="sectors-grid" id="sectors-grid">
-          <article class="sector-card" id="sector-beauty">
-            <div class="sector-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2C6 2 4 7 4 10c0 4 2 7 8 10 6-3 8-6 8-10 0-3-2-8-8-8z"/>
-                <path d="M12 2v20"/>
-              </svg>
-            </div>
-            <h3 class="sector-name">Beauty</h3>
-            <p class="sector-desc">Crafting premium beauty experiences that celebrate individuality and self-expression with authentic, quality formulations.</p>
-          </article>
-          <article class="sector-card" id="sector-logistics">
-            <div class="sector-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="1" y="3" width="15" height="13" rx="1"/>
-                <path d="M16 8h4l3 3v5h-7V8z"/>
-                <circle cx="5.5" cy="18.5" r="2.5"/>
-                <circle cx="18.5" cy="18.5" r="2.5"/>
-              </svg>
-            </div>
-            <h3 class="sector-name">Logistics</h3>
-            <p class="sector-desc">Precision-driven supply chain and delivery solutions that power commerce and connect communities across regions.</p>
-          </article>
-          <article class="sector-card" id="sector-food">
-            <div class="sector-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
-                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
-                <line x1="6" y1="1" x2="6" y2="4"/>
-                <line x1="10" y1="1" x2="10" y2="4"/>
-                <line x1="14" y1="1" x2="14" y2="4"/>
-              </svg>
-            </div>
-            <h3 class="sector-name">Food</h3>
-            <p class="sector-desc">Elevating food experiences through carefully curated brands that combine tradition, innovation, and uncompromising quality.</p>
-          </article>
-          <article class="sector-card" id="sector-healthcare">
-            <div class="sector-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-              </svg>
-            </div>
-            <h3 class="sector-name">Healthcare</h3>
-            <p class="sector-desc">Advancing wellness with products and services that prioritize health, trust, and human dignity at every touchpoint.</p>
-          </article>
+        <div class="stat-block reveal d2" id="stat-block-countries">
+          <div class="stat-big" data-count="40">40+</div>
+          <div class="stat-desc">Countries Served</div>
         </div>
-      </div>
-    </section>
-
-    <!-- =========== BRAND PHILOSOPHY =========== -->
-    <section class="section philosophy-section" id="philosophy-section">
-      <div class="philosophy-bg" aria-hidden="true"></div>
-      <div class="container">
-        <div class="philosophy-inner" id="philosophy-inner">
-          <span class="eyebrow eyebrow-light">Our Philosophy</span>
-          <h2 class="section-title light">Three pillars.<br>One identity.</h2>
-          <div class="pillars-row" id="pillars-row">
-            <div class="pillar" id="pillar-craft">
-              <span class="pillar-word">Craft</span>
-              <p class="pillar-desc">Everything we build is made with deliberate intention — attention to detail, mastery of form, and pride in execution.</p>
-            </div>
-            <div class="pillar-separator" aria-hidden="true"></div>
-            <div class="pillar" id="pillar-clarity">
-              <span class="pillar-word">Clarity</span>
-              <p class="pillar-desc">We communicate openly, operate transparently, and design products that are intuitive and honest in their purpose.</p>
-            </div>
-            <div class="pillar-separator" aria-hidden="true"></div>
-            <div class="pillar" id="pillar-character">
-              <span class="pillar-word">Character</span>
-              <p class="pillar-desc">Our brands have distinct personalities — bold, warm, and authentic. Character is what makes our products memorable.</p>
-            </div>
-          </div>
+        <div class="stat-block reveal d3" id="stat-block-offices">
+          <div class="stat-big" data-count="6">6</div>
+          <div class="stat-desc">Direct International Offices</div>
         </div>
-      </div>
-    </section>
-
-    <!-- =========== BRANDS PREVIEW =========== -->
-    <section class="section brands-preview" id="brands-preview">
-      <div class="container">
-        <div class="section-header centered" id="brands-header">
-          <span class="eyebrow">Our Portfolio</span>
-          <h2 class="section-title">Brands Under<br>RegineLand</h2>
-          <p class="section-desc">Each brand is purposefully built with its own identity, audience, and vision — yet collectively they represent one standard of quality.</p>
-        </div>
-        <div class="brands-showcase" id="brands-showcase-grid">
-          <div class="brand-tile" id="brand-tile-1">
-            <div class="brand-tile-bg beauty-bg" aria-hidden="true"></div>
-            <div class="brand-tile-content">
-              <span class="brand-sector-tag">Beauty</span>
-              <h3 class="brand-tile-name">Coming Soon</h3>
-              <p class="brand-tile-desc">A premium beauty brand under development.</p>
-            </div>
-          </div>
-          <div class="brand-tile" id="brand-tile-2">
-            <div class="brand-tile-bg logistics-bg" aria-hidden="true"></div>
-            <div class="brand-tile-content">
-              <span class="brand-sector-tag">Logistics</span>
-              <h3 class="brand-tile-name">Coming Soon</h3>
-              <p class="brand-tile-desc">Next-gen logistics solutions in the pipeline.</p>
-            </div>
-          </div>
-          <div class="brand-tile" id="brand-tile-3">
-            <div class="brand-tile-bg food-bg" aria-hidden="true"></div>
-            <div class="brand-tile-content">
-              <span class="brand-sector-tag">Food</span>
-              <h3 class="brand-tile-name">Coming Soon</h3>
-              <p class="brand-tile-desc">Artisanal food brands crafted with passion.</p>
-            </div>
-          </div>
-          <div class="brand-tile" id="brand-tile-4">
-            <div class="brand-tile-bg healthcare-bg" aria-hidden="true"></div>
-            <div class="brand-tile-content">
-              <span class="brand-sector-tag">Healthcare</span>
-              <h3 class="brand-tile-name">Coming Soon</h3>
-              <p class="brand-tile-desc">Health-first brands focused on real wellbeing.</p>
-            </div>
-          </div>
-        </div>
-        <div class="brands-cta" id="brands-cta">
-          <a href="brands.html" class="btn btn-primary" id="view-all-brands">View All Brands</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========== MARQUEE / TAGLINE STRIP =========== -->
-    <div class="marquee-strip" id="marquee-strip" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Craft &nbsp;·&nbsp; Clarity &nbsp;·&nbsp; Character &nbsp;·&nbsp;</span>
-        <span>Beauty &nbsp;·&nbsp; Logistics &nbsp;·&nbsp; Food &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp;</span>
-        <span>Craft &nbsp;·&nbsp; Clarity &nbsp;·&nbsp; Character &nbsp;·&nbsp;</span>
-        <span>Beauty &nbsp;·&nbsp; Logistics &nbsp;·&nbsp; Food &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp;</span>
-        <span>Craft &nbsp;·&nbsp; Clarity &nbsp;·&nbsp; Character &nbsp;·&nbsp;</span>
-        <span>Beauty &nbsp;·&nbsp; Logistics &nbsp;·&nbsp; Food &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp;</span>
       </div>
     </div>
 
-    <!-- =========== CONTACT TEASER =========== -->
-    <section class="section contact-teaser" id="contact-teaser">
+    <!-- ============ SECTORS OVERVIEW ============ -->
+    <section class="section sectors-overview" id="sectors-overview" aria-labelledby="sectors-heading">
       <div class="container">
-        <div class="contact-teaser-inner" id="contact-teaser-inner">
-          <h2 class="section-title">Let's build something<br>extraordinary together.</h2>
-          <p class="body-text">Whether you're looking to partner with one of our brands, invest in RegineLand Group, or simply learn more — we'd love to hear from you.</p>
-          <a href="contact.html" class="btn btn-primary" id="contact-cta">Get in Touch</a>
+        <div class="section-header centered reveal" id="sectors-header">
+          <span class="eyebrow">What We Handle</span>
+          <div class="divider divider-center" aria-hidden="true"></div>
+          <h2 class="section-title" id="sectors-heading">Three Sectors.<br>One Trusted Partner.</h2>
+          <p class="lead">From sterile medical devices to premium agri-food and bulk industrial cargo — we manage the full supply chain with precision and compliance.</p>
+        </div>
+
+        <div class="sectors-grid" id="sectors-main-grid">
+
+          <!-- Healthcare -->
+          <article class="sector-card reveal" id="sector-healthcare-card">
+            <div class="sector-card-img" style="background-image: url('assets/hero_medical.png');" aria-hidden="true"></div>
+            <div class="sector-card-overlay" aria-hidden="true"></div>
+            <div class="sector-card-body">
+              <div class="sector-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h2 class="sector-card-name">Healthcare &amp; Medical</h2>
+              <p class="sector-card-desc">ISO-certified medical devices, pharmaceuticals, and hospital consumables sourced from India — CE/FDA compliant supply chains for European markets.</p>
+              <a href="sectors.html#healthcare" class="sector-card-link" id="sector-link-healthcare">
+                Explore Sector
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Agri-Food -->
+          <article class="sector-card reveal d1" id="sector-agrifood-card">
+            <div class="sector-card-img" style="background-image: url('assets/hero_food_agri.png');" aria-hidden="true"></div>
+            <div class="sector-card-overlay" aria-hidden="true"></div>
+            <div class="sector-card-body">
+              <div class="sector-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12c0-2.76 1.12-5.26 2.93-7.07"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <h2 class="sector-card-name">Agri-Food &amp; Beverages</h2>
+              <p class="sector-card-desc">Premium Indian spices, basmati rice, tea, pulses, and processed food exports to European retail and distribution networks — full cold-chain &amp; phytosanitary compliance.</p>
+              <a href="sectors.html#agrifood" class="sector-card-link" id="sector-link-agrifood">
+                Explore Sector
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- General Cargo -->
+          <article class="sector-card reveal d2" id="sector-cargo-card">
+            <div class="sector-card-img" style="background-image: url('assets/hero_logistics.png');" aria-hidden="true"></div>
+            <div class="sector-card-overlay" aria-hidden="true"></div>
+            <div class="sector-card-body">
+              <div class="sector-card-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              </div>
+              <h2 class="sector-card-name">General Cargo &amp; Industrial</h2>
+              <p class="sector-card-desc">FCL/LCL ocean freight, air cargo, customs clearance, and warehousing for industrial goods, textiles, machinery, and manufacturing components.</p>
+              <a href="sectors.html#cargo" class="sector-card-link" id="sector-link-cargo">
+                Explore Sector
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUICK ACTIONS ============ -->
+    <section class="section quick-actions" id="quick-actions" aria-labelledby="quick-heading">
+      <div class="container">
+        <div class="section-header reveal" id="quick-header">
+          <span class="eyebrow">Get Started Today</span>
+          <div class="divider" aria-hidden="true"></div>
+          <h2 class="section-title section-title-light" id="quick-heading">How Can We Help You?</h2>
+        </div>
+        <div class="quick-actions-grid" id="quick-actions-grid">
+
+          <a href="contact.html#quote" class="quick-action-card reveal" id="qa-quote">
+            <div class="qa-icon qa-icon-gold" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="qa-title">Request a Quote</h3>
+            <p class="qa-desc">Get a tailored freight or trade quote within 24 hours. Specify origin, destination, commodity, and Incoterms — we do the rest.</p>
+            <span class="qa-arrow">
+              Get a Quote
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+
+          <a href="contact.html#track" class="quick-action-card reveal d1" id="qa-track">
+            <div class="qa-icon qa-icon-blue" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="qa-title">Track a Shipment</h3>
+            <p class="qa-desc">Real-time visibility on your cargo. Enter your booking reference or container number and get instant status updates.</p>
+            <span class="qa-arrow">
+              Track Now
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+
+          <a href="network.html" class="quick-action-card reveal d2" id="qa-offices">
+            <div class="qa-icon qa-icon-teal" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="qa-title">Contact Our Offices</h3>
+            <p class="qa-desc">Speak directly with our local teams in India, UK, or Italy. Every inquiry is routed to the right expert in your region.</p>
+            <span class="qa-arrow">
+              Find an Office
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="section why-us" id="why-us" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-visual reveal-left" id="why-visual" aria-hidden="true">
+            <div class="why-img-wrap">
+              <img src="assets/hero_logistics.png" alt="RegineLand Group global trade operations" loading="lazy">
+            </div>
+            <div class="why-badge-float" id="why-badge-float">
+              <div class="why-badge-float-num" id="why-count">98%</div>
+              <div class="why-badge-float-label">On-time delivery rate</div>
+              <div class="why-badge-float-accent" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="why-text reveal-right" id="why-text">
+            <span class="eyebrow">Why RegineLand Group</span>
+            <div class="divider" aria-hidden="true"></div>
+            <h2 class="section-title" id="why-heading">Trusted by B2B Buyers<br>Across Three Continents</h2>
+            <p class="lead" style="margin-bottom: 0;">From port to warehouse to final delivery — we manage every link of the chain with compliance, transparency, and precision.</p>
+
+            <div class="why-list" id="why-list">
+              <div class="why-item reveal d1" id="why-item-1">
+                <div class="why-item-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h3 class="why-item-title">Regulatory Compliance</h3>
+                  <p class="why-item-desc">ISO 13485, CE marking, FDA readiness, FSSAI, and phytosanitary compliance — we handle documentation for every market.</p>
+                </div>
+              </div>
+              <div class="why-item reveal d2" id="why-item-2">
+                <div class="why-item-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div>
+                  <h3 class="why-item-title">Multi-Country Network</h3>
+                  <p class="why-item-desc">Direct offices in India, UK, Italy, and beyond — giving you local expertise with a global reach across every trade corridor.</p>
+                </div>
+              </div>
+              <div class="why-item reveal d3" id="why-item-3">
+                <div class="why-item-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+                <div>
+                  <h3 class="why-item-title">End-to-End Logistics</h3>
+                  <p class="why-item-desc">Ocean freight (FCL/LCL), air freight, customs clearance, warehousing — one partner for the complete supply chain journey.</p>
+                </div>
+              </div>
+              <div class="why-item reveal d4" id="why-item-4">
+                <div class="why-item-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <div>
+                  <h3 class="why-item-title">Real-Time Visibility</h3>
+                  <p class="why-item-desc">Track your shipments at every milestone. Our digital platform gives you live status, estimated arrival, and full documentation access.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 36px; display: flex; gap: 14px; flex-wrap: wrap;">
+              <a href="about.html" class="btn btn-navy" id="why-cta-about">About Our Company</a>
+              <a href="contact.html" class="btn btn-outline-navy" id="why-cta-contact">Talk to an Expert</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GLOBAL OFFICES STRIP ============ -->
+    <section class="section-sm network-strip" id="network-strip" aria-labelledby="offices-heading">
+      <div class="container">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; flex-wrap: gap; gap: 16px;">
+          <div>
+            <span class="eyebrow" style="color: rgba(255,255,255,0.5)">Our Presence</span>
+            <h2 class="section-title section-title-light" id="offices-heading" style="font-size: 1.6rem; margin-bottom: 0;">Offices Around the Globe</h2>
+          </div>
+          <a href="network.html" class="btn btn-outline-white btn-sm" id="offices-view-all">View All Offices</a>
+        </div>
+        <div class="network-offices reveal" id="network-offices">
+          <div class="office-pill" id="office-india">
+            <div class="office-flag" aria-hidden="true">🇮🇳</div>
+            <div class="office-info">
+              <div class="office-city">Mumbai / Delhi</div>
+              <div class="office-country">India — HQ &amp; Origin Hub</div>
+            </div>
+          </div>
+          <div class="office-pill" id="office-uk">
+            <div class="office-flag" aria-hidden="true">🇬🇧</div>
+            <div class="office-info">
+              <div class="office-city">London</div>
+              <div class="office-country">United Kingdom</div>
+            </div>
+          </div>
+          <div class="office-pill" id="office-italy">
+            <div class="office-flag" aria-hidden="true">🇮🇹</div>
+            <div class="office-info">
+              <div class="office-city">Milan / Genoa</div>
+              <div class="office-country">Italy</div>
+            </div>
+          </div>
+          <div class="office-pill" id="office-uae">
+            <div class="office-flag" aria-hidden="true">🇦🇪</div>
+            <div class="office-info">
+              <div class="office-city">Dubai</div>
+              <div class="office-country">UAE — Gateway Hub</div>
+            </div>
+          </div>
+          <div class="office-pill" id="office-more">
+            <div class="office-flag" aria-hidden="true">🌍</div>
+            <div class="office-info">
+              <div class="office-city">+2 More Offices</div>
+              <div class="office-country">Global Network</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS MARQUEE ============ -->
+    <div class="cert-strip" id="cert-strip" role="region" aria-label="Certifications and standards">
+      <div class="cert-track">
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>ISO 13485</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>CE Marking</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>FDA Ready</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>FSSAI Certified</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>FIEO Member</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>IATA Accredited</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>ISO 9001:2015</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Customs Cleared</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>EXIM Bank Partner</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Phytosanitary Compliant</span>
+        <!-- duplicate for infinite scroll -->
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>ISO 13485</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>CE Marking</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>FDA Ready</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>FSSAI Certified</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>FIEO Member</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>IATA Accredited</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>ISO 9001:2015</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Customs Cleared</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>EXIM Bank Partner</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Phytosanitary Compliant</span>
+      </div>
+    </div>
+
+    <!-- ============ LATEST NEWS ============ -->
+    <section class="section news-preview" id="news-preview" aria-labelledby="news-heading">
+      <div class="container">
+        <div class="section-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+          <div>
+            <span class="eyebrow">Stay Informed</span>
+            <div class="divider" aria-hidden="true"></div>
+            <h2 class="section-title" id="news-heading">Trade &amp; Logistics Insights</h2>
+          </div>
+          <a href="resources.html" class="btn btn-outline-navy btn-sm" id="news-view-all">View All Articles</a>
+        </div>
+        <div class="news-grid reveal" id="news-grid">
+          <article class="news-card" id="news-card-1">
+            <div class="news-card-img" style="background-image: url('assets/hero_medical.png');"></div>
+            <div class="news-card-body">
+              <span class="news-tag">Healthcare</span>
+              <h3 class="news-card-title">New EU MDR Regulations: What Indian Medical Device Exporters Need to Know in 2025</h3>
+              <p class="news-card-date">October 2026</p>
+            </div>
+          </article>
+          <article class="news-card" id="news-card-2">
+            <div class="news-card-img" style="background-image: url('assets/hero_food_agri.png');"></div>
+            <div class="news-card-body">
+              <span class="news-tag">Agri-Food</span>
+              <h3 class="news-card-title">India–EU Free Trade Agreement Update: Impact on Agri-Food Tariffs and Export Opportunities</h3>
+              <p class="news-card-date">September 2026</p>
+            </div>
+          </article>
+          <article class="news-card" id="news-card-3">
+            <div class="news-card-img" style="background-image: url('assets/hero_logistics.png');"></div>
+            <div class="news-card-body">
+              <span class="news-tag">Logistics</span>
+              <h3 class="news-card-title">Global Shipping Rates 2026: Key Trends on the India–Europe Trade Lane</h3>
+              <p class="news-card-date">August 2026</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="section-sm section-dark" id="cta-banner" aria-label="Call to action">
+      <div class="container" style="text-align:center;">
+        <span class="eyebrow" style="color:rgba(255,255,255,0.4)">Start Your Journey</span>
+        <h2 class="section-title section-title-light reveal" style="max-width:600px; margin: 0 auto 20px;">Ready to Move Your Cargo<br>Across Borders?</h2>
+        <p class="lead lead-light reveal d1" style="max-width:480px; margin: 0 auto 36px;">Connect with our trade specialists today. Get a personalised quote, compliance advice, or simply learn more about our services.</p>
+        <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;" class="reveal d2">
+          <a href="contact.html#quote" class="btn btn-gold btn-lg" id="cta-banner-quote">Request a Quote</a>
+          <a href="about.html" class="btn btn-outline-white" id="cta-banner-about">Learn About Us</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- =========== FOOTER =========== -->
-  <footer class="site-footer" id="site-footer">
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-grid" id="footer-grid">
-        <div class="footer-brand" id="footer-brand">
-          <a href="index.html" class="nav-logo footer-logo" aria-label="RegineLand Group Home">
-            <span class="logo-text">RegineLand</span>
-            <span class="logo-sub">GROUP</span>
-          </a>
-          <p class="footer-tagline">Quality is not a promise — it's a culture.</p>
-        </div>
-        <div class="footer-links" id="footer-links">
-          <h4 class="footer-heading">Navigate</h4>
-          <ul role="list">
-            <li><a href="index.html" id="footer-nav-home">Home</a></li>
-            <li><a href="about.html" id="footer-nav-about">About</a></li>
-            <li><a href="brands.html" id="footer-nav-brands">Brands</a></li>
-            <li><a href="contact.html" id="footer-nav-contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-sectors" id="footer-sectors">
-          <h4 class="footer-heading">Sectors</h4>
-          <ul role="list">
-            <li><a href="brands.html#beauty" id="footer-sector-beauty">Beauty</a></li>
-            <li><a href="brands.html#logistics" id="footer-sector-logistics">Logistics</a></li>
-            <li><a href="brands.html#food" id="footer-sector-food">Food</a></li>
-            <li><a href="brands.html#healthcare" id="footer-sector-healthcare">Healthcare</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact" id="footer-contact-col">
-          <h4 class="footer-heading">Contact</h4>
-          <p><a href="mailto:info@regineland.com" id="footer-email">info@regineland.com</a></p>
-          <p><a href="https://www.regineland.com" target="_blank" rel="noopener" id="footer-website">www.regineland.com</a></p>
+      <div class="footer-top">
+        <div class="footer-grid" id="footer-grid">
+          <div class="footer-brand" id="footer-brand">
+            <a href="index.html" class="nav-logo footer-logo" aria-label="RegineLand Group Home">
+              <span class="logo-main">RegineLand</span>
+              <span class="logo-tagline">Global Trade &amp; Logistics</span>
+            </a>
+            <p class="footer-desc">Your trusted bridge for global trade — connecting Indian manufacturers and producers with markets in Europe and beyond.</p>
+            <div class="footer-certifications" aria-label="Our certifications">
+              <span class="footer-cert-badge">ISO 9001</span>
+              <span class="footer-cert-badge">ISO 13485</span>
+              <span class="footer-cert-badge">CE Ready</span>
+              <span class="footer-cert-badge">FDA</span>
+              <span class="footer-cert-badge">FSSAI</span>
+            </div>
+          </div>
+
+          <div class="footer-col" id="footer-col-company">
+            <h4 class="footer-col-title">Company</h4>
+            <nav class="footer-links" aria-label="Company links">
+              <a href="about.html" id="footer-about">About Us</a>
+              <a href="about.html#history" id="footer-history">Our History</a>
+              <a href="about.html#network" id="footer-network-link">Global Network</a>
+              <a href="about.html#group" id="footer-group">Group &amp; Partners</a>
+              <a href="resources.html" id="footer-resources">Resources</a>
+            </nav>
+          </div>
+
+          <div class="footer-col" id="footer-col-sectors">
+            <h4 class="footer-col-title">Sectors</h4>
+            <nav class="footer-links" aria-label="Sector links">
+              <a href="sectors.html#healthcare" id="footer-healthcare">Healthcare &amp; Medical</a>
+              <a href="sectors.html#agrifood" id="footer-agrifood">Agri-Food &amp; Beverages</a>
+              <a href="sectors.html#cargo" id="footer-cargo">General Cargo</a>
+              <a href="sectors.html#logistics" id="footer-logistics">Integrated Logistics</a>
+            </nav>
+          </div>
+
+          <div class="footer-col" id="footer-col-offices">
+            <h4 class="footer-col-title">Offices</h4>
+            <nav class="footer-links" aria-label="Office links">
+              <a href="network.html#india" id="footer-india">🇮🇳 India (HQ)</a>
+              <a href="network.html#uk" id="footer-uk">🇬🇧 United Kingdom</a>
+              <a href="network.html#italy" id="footer-italy">🇮🇹 Italy</a>
+              <a href="network.html#uae" id="footer-uae">🇦🇪 UAE</a>
+              <a href="network.html" id="footer-all-offices">All Offices →</a>
+            </nav>
+          </div>
+
+          <div class="footer-col" id="footer-col-contact">
+            <h4 class="footer-col-title">Global HQ — India</h4>
+            <div class="footer-contact-item" id="footer-addr">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Mumbai, Maharashtra, India</span>
+            </div>
+            <div class="footer-contact-item" id="footer-phone">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span><a href="tel:+911234567890">+91 12 3456 7890</a></span>
+            </div>
+            <div class="footer-contact-item" id="footer-email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span><a href="mailto:info@regineland.com">info@regineland.com</a></span>
+            </div>
+            <a href="it/index.html" style="display:inline-flex; align-items:center; gap:6px; font-size:0.8rem; color:rgba(255,255,255,0.4); margin-top:16px; transition:color 0.2s;" onmouseover="this.style.color='#e0b55a'" onmouseout="this.style.color='rgba(255,255,255,0.4)'" id="footer-lang-it">🇮🇹 Versione Italiana →</a>
+          </div>
         </div>
       </div>
+
       <div class="footer-bottom" id="footer-bottom">
-        <p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. All rights reserved.</p>
-        <p class="footer-sub">Craft · Clarity · Character</p>
+        <p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. All rights reserved. Registered in India &amp; UK.</p>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="#" id="footer-privacy">Privacy Policy</a>
+          <a href="#" id="footer-terms">Terms of Service</a>
+          <a href="#" id="footer-cookies">Cookie Policy</a>
+        </nav>
       </div>
     </div>
   </footer>
