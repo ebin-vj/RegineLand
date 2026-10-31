@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Our Brands — RegineLand Group</title>
+  <meta name="description" content="Explore the brands under RegineLand Group — spanning beauty, logistics, food, and healthcare. Each brand is purposefully built with its own identity and vision.">
+  <meta property="og:title" content="Our Brands — RegineLand Group">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.regineland.com/brands">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=League+Spartan:wght@400;700&family=Lexend:wght@300;400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <a href="index.html" class="nav-logo" id="nav-logo" aria-label="RegineLand Group Home">
+        <span class="logo-text">RegineLand</span>
+        <span class="logo-sub">GROUP</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+        <li><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="brands.html" class="nav-link active" id="nav-brands">Brands</a></li>
+        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" id="brands-page-hero">
+      <span class="eyebrow">Our Portfolio</span>
+      <h1 class="page-hero-title">Brands that speak<br>for themselves.</h1>
+      <p class="page-hero-desc">Each brand under RegineLand Group carries its own distinct identity, audience, and purpose — yet every one is built on the same foundation of craft, clarity, and character.</p>
+    </section>
+
+    <!-- BRANDS SECTION -->
+    <section class="section" id="brands-listing">
+      <div class="container">
+
+        <!-- Filter -->
+        <div class="brands-filter" id="brands-filter" role="group" aria-label="Filter brands by sector">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Brands</button>
+          <button class="filter-btn" data-filter="beauty" id="filter-beauty">Beauty</button>
+          <button class="filter-btn" data-filter="logistics" id="filter-logistics">Logistics</button>
+          <button class="filter-btn" data-filter="food" id="filter-food">Food</button>
+          <button class="filter-btn" data-filter="healthcare" id="filter-healthcare">Healthcare</button>
+        </div>
+
+        <!-- Brand Cards Grid -->
+        <div class="brands-full-grid" id="brands-full-grid">
+
+          <!-- Beauty Brand 1 -->
+          <article class="brand-card reveal" data-sector="beauty" id="brand-beauty-1">
+            <div class="brand-card-visual beauty-bg" id="brand-visual-beauty-1"></div>
+            <div class="brand-card-body">
+              <p class="brand-card-sector">Beauty</p>
+              <h2 class="brand-card-name">Beauty Brand</h2>
+              <p class="brand-card-desc">A premium skincare and beauty line crafted with authentic ingredients and purpose-driven formulations. Celebrating individuality at every stage.</p>
+              <span class="brand-card-status">In Development</span>
+            </div>
+          </article>
+
+          <!-- Beauty Brand 2 -->
+          <article class="brand-card reveal reveal-delay-1" data-sector="beauty" id="brand-beauty-2">
+            <div class="brand-card-visual" style="background: linear-gradient(135deg, #3a1a3e 0%, #6a3060 100%);" id="brand-visual-beauty-2"></div>
+            <div class="brand-card-body">
+              <p class="brand-card-sector">Beauty</p>
+              <h2 class="brand-card-name">Beauty Brand II</h2>
+              <p class="brand-card-desc">A contemporary cosmetics line focused on clean beauty — transparent ingredients, sustainable packaging, and formulas that perform.</p>
+              <span class="brand-card-status">In Development</span>
+            </div>
+          </article>
+
+          <!-- Logistics Brand -->
+          <article class="brand-card reveal reveal-delay-2" data-sector="logistics" id="brand-logistics-1">
+            <div class="brand-card-visual logistics-bg" id="brand-visual-logistics-1"></div>
+            <div class="brand-card-body">
+              <p class="brand-card-sector">Logistics</p>
+              <h2 class="brand-card-name">Logistics Brand</h2>
+              <p class="brand-card-desc">Precision-engineered supply chain and last-mile delivery solutions. Moving goods faster, smarter, and more reliably across markets.</p>
+              <span class="brand-card-status">In Development</span>
+            </div>
+          </article>
+
+          <!-- Food Brand 1 -->
+          <article class="brand-card reveal" data-sector="food" id="brand-food-1">
+            <div class="brand-card-visual food-bg" id="brand-visual-food-1"></div>
+            <div class="brand-card-body">
+              <p class="brand-card-sector">Food</p>
+              <h2 class="brand-card-name">Food Brand</h2>
+              <p class="brand-card-desc">An artisanal food brand rooted in tradition and elevated by innovation. From sourcing to plate, every step honours quality and taste.</p>
+              <span class="brand-card-status">In Development</span>
+            </div>
+          </article>
+
+          <!-- Food Brand 2 -->
+          <article class="brand-card reveal reveal-delay-1" data-sector="food" id="brand-food-2">
+            <div class="brand-card-visual" style="background: linear-gradient(135deg, #3a2010 0%, #704020 100%);" id="brand-visual-food-2"></div>
+            <div class="brand-card-body">
+              <p class="brand-card-sector">Food</p>
+              <h2 class="brand-card-name">Food Brand II</h2>
+              <p class="brand-card-desc">A wellness-focused nutrition brand built on wholesome ingredients and science-backed formulations for everyday health support.</p>
+              <span class="brand-card-status">In Development</span>
+            </div>
+          </article>
+
+          <!-- Healthcare Brand -->
+          <article class="brand-card reveal reveal-delay-2" data-sector="healthcare" id="brand-healthcare-1">
+            <div class="brand-card-visual healthcare-bg" id="brand-visual-healthcare-1"></div>
+            <div class="brand-card-body">
+              <p class="brand-card-sector">Healthcare</p>
+              <h2 class="brand-card-name">Healthcare Brand</h2>
+              <p class="brand-card-desc">A patient-first healthcare brand offering accessible products and services that prioritise wellness, dignity, and trust at every touchpoint.</p>
+              <span class="brand-card-status">In Development</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTOR HIGHLIGHTS -->
+    <section class="section sectors-section" id="sector-highlights">
+      <div class="container">
+        <div class="section-header centered" id="sector-highlights-header">
+          <span class="eyebrow">Our Reach</span>
+          <h2 class="section-title">Sectors We Lead</h2>
+          <p class="section-desc">Our multi-sector approach means we are always close to what matters most — delivering quality where it counts.</p>
+        </div>
+        <div class="sectors-grid" id="sector-highlights-grid">
+          <article class="sector-card reveal reveal-delay-1" id="sector-highlight-beauty">
+            <div class="sector-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6 2 4 7 4 10c0 4 2 7 8 10 6-3 8-6 8-10 0-3-2-8-8-8z"/>
+                <path d="M12 2v20"/>
+              </svg>
+            </div>
+            <h3 class="sector-name">Beauty</h3>
+            <p class="sector-desc">Premium, authentic beauty experiences that celebrate who you are — crafted with real ingredients and real intention.</p>
+          </article>
+          <article class="sector-card reveal reveal-delay-2" id="sector-highlight-logistics">
+            <div class="sector-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="1"/>
+                <path d="M16 8h4l3 3v5h-7V8z"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <h3 class="sector-name">Logistics</h3>
+            <p class="sector-desc">Efficient, reliable, and technology-driven logistics that power businesses and connect people to the things they need.</p>
+          </article>
+          <article class="sector-card reveal reveal-delay-3" id="sector-highlight-food">
+            <div class="sector-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                <line x1="6" y1="1" x2="6" y2="4"/>
+                <line x1="10" y1="1" x2="10" y2="4"/>
+                <line x1="14" y1="1" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <h3 class="sector-name">Food</h3>
+            <p class="sector-desc">Curated food brands that bring together tradition, flavour, and nutrition — elevating everyday eating into something worth savouring.</p>
+          </article>
+          <article class="sector-card reveal reveal-delay-4" id="sector-highlight-healthcare">
+            <div class="sector-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3 class="sector-name">Healthcare</h3>
+            <p class="sector-desc">Trusted, transparent healthcare products and services that put human wellbeing at the centre of every decision.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-strip" id="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Craft &nbsp;·&nbsp; Clarity &nbsp;·&nbsp; Character &nbsp;·&nbsp;</span>
+        <span>Beauty &nbsp;·&nbsp; Logistics &nbsp;·&nbsp; Food &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp;</span>
+        <span>Craft &nbsp;·&nbsp; Clarity &nbsp;·&nbsp; Character &nbsp;·&nbsp;</span>
+        <span>Beauty &nbsp;·&nbsp; Logistics &nbsp;·&nbsp; Food &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp;</span>
+        <span>Craft &nbsp;·&nbsp; Clarity &nbsp;·&nbsp; Character &nbsp;·&nbsp;</span>
+        <span>Beauty &nbsp;·&nbsp; Logistics &nbsp;·&nbsp; Food &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="section contact-teaser" id="brands-cta-section">
+      <div class="container">
+        <div class="contact-teaser-inner reveal">
+          <h2 class="section-title">Have a brand idea<br>that fits our vision?</h2>
+          <p class="body-text">We're always looking for bold ideas and strong partners to build the next RegineLand brand. Let's talk.</p>
+          <a href="contact.html" class="btn btn-primary" id="brands-contact-cta">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid" id="footer-grid">
+        <div class="footer-brand" id="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo" aria-label="RegineLand Group Home">
+            <span class="logo-text">RegineLand</span>
+            <span class="logo-sub">GROUP</span>
+          </a>
+          <p class="footer-tagline">Quality is not a promise — it's a culture.</p>
+        </div>
+        <div class="footer-links" id="footer-links">
+          <h4 class="footer-heading">Navigate</h4>
+          <ul role="list">
+            <li><a href="index.html" id="footer-nav-home">Home</a></li>
+            <li><a href="about.html" id="footer-nav-about">About</a></li>
+            <li><a href="brands.html" id="footer-nav-brands">Brands</a></li>
+            <li><a href="contact.html" id="footer-nav-contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-sectors" id="footer-sectors">
+          <h4 class="footer-heading">Sectors</h4>
+          <ul role="list">
+            <li><a href="#beauty" id="footer-sector-beauty">Beauty</a></li>
+            <li><a href="#logistics" id="footer-sector-logistics">Logistics</a></li>
+            <li><a href="#food" id="footer-sector-food">Food</a></li>
+            <li><a href="#healthcare" id="footer-sector-healthcare">Healthcare</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact" id="footer-contact-col">
+          <h4 class="footer-heading">Contact</h4>
+          <p><a href="mailto:info@regineland.com" id="footer-email">info@regineland.com</a></p>
+          <p><a href="https://www.regineland.com" target="_blank" rel="noopener" id="footer-website">www.regineland.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom" id="footer-bottom">
+        <p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. All rights reserved.</p>
+        <p class="footer-sub">Craft · Clarity · Character</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
