@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it" itemscope itemtype="http://schema.org/WebPage">
 <head>
   <meta charset="utf-8">
@@ -14,27 +14,62 @@
 </head>
 <body>
 
-  <div class="lang-banner" id="lang-banner">
-    <span>Also available in:</span>
-    <a href="network.html" hreflang="it">🇮🇹 Italiano</a>
-  </div>
-
+  <!-- ============ SITE HEADER ============ -->
   <header class="site-header solid" id="site-header">
-    <nav class="navbar" id="navbar" aria-label="Main navigation">
-      <a href="index.html" class="nav-logo" id="nav-logo"><span class="logo-main">RegineLand</span><span class="logo-tagline">Global Trade &amp; Logistics</span></a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+    <!-- Language Bar -->
+    <div class="lang-banner" id="lang-banner" role="navigation" aria-label="Selezione lingua">
+      <div class="lang-banner-inner">
+        <span class="lang-banner-label">Disponibile anche in:</span>
+        <div class="lang-banner-links">
+          <a href="#" id="lang-it" class="lang-link active" aria-current="page"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><rect width="213.3" height="480" fill="#009246"/><rect x="213.3" width="213.3" height="480" fill="#fff"/><rect x="426.7" width="213.3" height="480" fill="#ce2b37"/></svg>Italiano</a>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <a href="../network.html" id="lang-en" hreflang="en" class="lang-link"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#fff" d="m75 0 245 180L565 0h75v60L435 240l205 180v60h-75L320 300 75 480H0v-60l205-180L0 60V0h75z"/><path fill="#c8102e" d="m424 288 216 156v36h-48L376 324l48-36zM640 0v12L420 180l48 36L640 48V0zM0 480v-12l220-168-48-36L0 432v48zm0-480 264 192-48 36L0 72V0z"/><path fill="#fff" d="M260 0h120v480H260zM0 180h640v120H0z"/><path fill="#c8102e" d="M284 0h72v480h-72zM0 204h640v72H0z"/></svg>English</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigazione principale -->
+    <nav class="navbar" id="navbar" aria-label="Navigazione principale">
+      <a href="index.html" class="nav-logo" id="nav-logo" aria-label="RegineLand Group — Home">
+        <span class="logo-main">RegineLand</span>
+        <span class="logo-tagline">Commercio &amp; Logistica Globale</span>
+      </a>
+
       <ul class="nav-menu" id="nav-menu" role="list">
         <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
-        <li class="nav-item"><a href="about.html" class="nav-link" id="nav-about">About ▾</a><div class="nav-dropdown"><a href="about.html#history">Our History</a><a href="about.html#network">Global Network</a><a href="about.html#group">Group &amp; Partners</a></div></li>
-        <li><a href="sectors.html" class="nav-link" id="nav-sectors">Sectors</a></li>
-        <li><a href="network.html" class="nav-link active" id="nav-network">Global Network</a></li>
-        <li><a href="resources.html" class="nav-link" id="nav-resources">Resources</a></li>
-        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link" id="nav-about">Chi Siamo ▾</a>
+          <div class="nav-dropdown">
+            <a href="about.html#history" id="nav-history">Storia &amp; Visione</a>
+            <a href="about.html#network" id="nav-network-link">Rete Globale</a>
+            <a href="about.html#group" id="nav-group">Gruppo &amp; Partner</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="sectors.html" class="nav-link" id="nav-sectors">Settori ▾</a>
+          <div class="nav-dropdown">
+            <a href="sectors.html#healthcare" id="nav-healthcare">🏥 Sanitario &amp; Dispositivi Medici</a>
+            <a href="sectors.html#agrifood" id="nav-agrifood">🌾 Agroalimentare &amp; Bevande</a>
+            <a href="sectors.html#cargo" id="nav-cargo">📦 Merci Generali &amp; Industriali</a>
+            <a href="sectors.html#logistics" id="nav-logistics">🚢 Logistica Integrata</a>
+            <a href="sectors.html#industries" id="nav-industries">🌐 Le Nostre Industrie nel Mondo</a>
+          </div>
+        </li>
+        <li><a href="network.html" class="nav-link active" id="nav-network">Rete Globale</a></li>
+        <li><a href="resources.html" class="nav-link" id="nav-resources">Risorse</a></li>
+        <li><a href="contact.html" class="nav-link" id="nav-contact">Contatti</a></li>
       </ul>
+
       <div class="nav-actions">
-        <a href="network.html" class="nav-lang" id="nav-lang-it">IT</a>
-        <a href="contact.html#quote" class="btn btn-gold btn-sm" id="nav-cta">Request a Quote</a>
+        <a href="../network.html" class="nav-lang" id="nav-lang-en" hreflang="en" title="English Version">EN</a>
+        <a href="contact.html#preventivo" class="btn btn-gold btn-sm" id="nav-cta">Richiedi un Preventivo</a>
       </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </nav>
   </header>
 
@@ -55,11 +90,11 @@
         <div class="office-selector reveal" id="office-selector" role="region" aria-label="Filter offices by country">
           <p style="font-size:0.82rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px;">Filter by Country</p>
           <div class="country-select-grid" id="country-select-grid" role="group" aria-label="Country filter buttons">
-            <button class="country-btn active" data-country="all" id="filter-all"><span class="flag">🌍</span> All Offices</button>
-            <button class="country-btn" data-country="india" id="filter-india"><span class="flag">🇮🇳</span> India</button>
-            <button class="country-btn" data-country="uk" id="filter-uk"><span class="flag">🇬🇧</span> United Kingdom</button>
-            <button class="country-btn" data-country="italy" id="filter-italy"><span class="flag">🇮🇹</span> Italy</button>
-            <button class="country-btn" data-country="uae" id="filter-uae"><span class="flag">🇦🇪</span> UAE</button>
+            <button class="country-btn active" data-country="all" id="filter-all"><span class="flag">🌍</span> Tutti gli Uffici</button>
+            <button class="country-btn" data-country="india" id="filter-india"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><rect width="640" height="160" fill="#f93"/><rect y="160" width="640" height="160" fill="#fff"/><rect y="320" width="640" height="160" fill="#128807"/><circle cx="320" cy="240" r="48" fill="none" stroke="#008" stroke-width="8"/><circle cx="320" cy="240" r="12" fill="#008"/></svg>India</button>
+            <button class="country-btn" data-country="uk" id="filter-uk"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#fff" d="m75 0 245 180L565 0h75v60L435 240l205 180v60h-75L320 300 75 480H0v-60l205-180L0 60V0h75z"/><path fill="#c8102e" d="m424 288 216 156v36h-48L376 324l48-36zM640 0v12L420 180l48 36L640 48V0zM0 480v-12l220-168-48-36L0 432v48zm0-480 264 192-48 36L0 72V0z"/><path fill="#fff" d="M260 0h120v480H260zM0 180h640v120H0z"/><path fill="#c8102e" d="M284 0h72v480h-72zM0 204h640v72H0z"/></svg>Regno Unito</button>
+            <button class="country-btn" data-country="italy" id="filter-italy"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><rect width="213.3" height="480" fill="#009246"/><rect x="213.3" width="213.3" height="480" fill="#fff"/><rect x="426.7" width="213.3" height="480" fill="#ce2b37"/></svg>Italia</button>
+            <button class="country-btn" data-country="uae" id="filter-uae"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><rect width="640" height="160" fill="#00732f"/><rect y="160" width="640" height="160" fill="#fff"/><rect y="320" width="640" height="160" fill="#000"/><rect width="180" height="480" fill="#f00"/></svg>Emirati Arabi</button>
           </div>
         </div>
 
@@ -69,156 +104,156 @@
           <!-- India HQ -->
           <article class="office-card reveal" data-country="india" id="office-india">
             <div class="office-card-header">
-              <div class="office-flag-big" aria-label="India flag">🇮🇳</div>
+              <div class="office-flag-big" aria-label="Bandiera India"><svg class="flag-icon-lg" viewBox="0 0 640 480" width="38" height="26" aria-hidden="true"><rect width="640" height="160" fill="#f93"/><rect y="160" width="640" height="160" fill="#fff"/><rect y="320" width="640" height="160" fill="#128807"/><circle cx="320" cy="240" r="48" fill="none" stroke="#008" stroke-width="8"/><circle cx="320" cy="240" r="12" fill="#008"/></svg></div>
               <div>
-                <p class="office-card-country">India — Global Headquarters</p>
+                <p class="office-card-country">India — Sede Globale</p>
                 <h2 class="office-card-city">Mumbai</h2>
               </div>
             </div>
             <div class="office-card-body">
               <div class="office-detail">
                 <div class="office-detail-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                <div><p class="office-detail-label">Address</p><p class="office-detail-value">RegineLand Group Pvt. Ltd.<br>Level 8, Trade Tower, Bandra Kurla Complex<br>Mumbai, Maharashtra 400 051, India</p></div>
+                <div><p class="office-detail-label">Indirizzo</p><p class="office-detail-value">RegineLand Group Pvt. Ltd.<br>Level 8, Trade Tower, Bandra Kurla Complex<br>Mumbai, Maharashtra 400 051, India</p></div>
               </div>
               <div class="office-detail">
                 <div class="office-detail-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-                <div><p class="office-detail-label">Phone</p><p class="office-detail-value"><a href="tel:+912212345678">+91 22 1234 5678</a></p></div>
+                <div><p class="office-detail-label">Telefono</p><p class="office-detail-value"><a href="tel:+912212345678">+91 22 1234 5678</a></p></div>
               </div>
               <div class="office-detail">
                 <div class="office-detail-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                 <div><p class="office-detail-label">Email</p><p class="office-detail-value"><a href="mailto:india@regineland.com">india@regineland.com</a></p></div>
               </div>
-              <div style="margin-top:20px;"><a href="contact.html?office=india" class="btn btn-navy btn-sm" id="contact-india">Contact India Office</a></div>
+              <div style="margin-top:20px;"><a href="contact.html?office=india" class="btn btn-navy btn-sm" id="contact-india">Contatta Sede India</a></div>
             </div>
           </article>
 
           <!-- India — Delhi -->
           <article class="office-card reveal d1" data-country="india" id="office-delhi">
             <div class="office-card-header">
-              <div class="office-flag-big" aria-label="India flag">🇮🇳</div>
+              <div class="office-flag-big" aria-label="Bandiera India"><svg class="flag-icon-lg" viewBox="0 0 640 480" width="38" height="26" aria-hidden="true"><rect width="640" height="160" fill="#f93"/><rect y="160" width="640" height="160" fill="#fff"/><rect y="320" width="640" height="160" fill="#128807"/><circle cx="320" cy="240" r="48" fill="none" stroke="#008" stroke-width="8"/><circle cx="320" cy="240" r="12" fill="#008"/></svg></div>
               <div>
-                <p class="office-card-country">India — North India Hub</p>
+                <p class="office-card-country">India — Hub Nord India</p>
                 <h2 class="office-card-city">New Delhi</h2>
               </div>
             </div>
             <div class="office-card-body">
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                <div><p class="office-detail-label">Address</p><p class="office-detail-value">RegineLand Group Pvt. Ltd.<br>Plot 42, Nehru Place<br>New Delhi 110 019, India</p></div>
+                <div><p class="office-detail-label">Indirizzo</p><p class="office-detail-value">RegineLand Group Pvt. Ltd.<br>Plot 42, Nehru Place<br>New Delhi 110 019, India</p></div>
               </div>
               <div class="office-detail">
-                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/></svg></div>
-                <div><p class="office-detail-label">Phone</p><p class="office-detail-value"><a href="tel:+911112345678">+91 11 1234 5678</a></p></div>
+                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div><p class="office-detail-label">Telefono</p><p class="office-detail-value"><a href="tel:+911112345678">+91 11 1234 5678</a></p></div>
               </div>
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                 <div><p class="office-detail-label">Email</p><p class="office-detail-value"><a href="mailto:delhi@regineland.com">delhi@regineland.com</a></p></div>
               </div>
-              <div style="margin-top:20px;"><a href="contact.html?office=india" class="btn btn-navy btn-sm" id="contact-delhi">Contact Delhi Office</a></div>
+              <div style="margin-top:20px;"><a href="contact.html?office=india" class="btn btn-navy btn-sm" id="contact-delhi">Contatta Sede Delhi</a></div>
             </div>
           </article>
 
           <!-- UK -->
           <article class="office-card reveal d2" data-country="uk" id="office-uk">
             <div class="office-card-header">
-              <div class="office-flag-big" aria-label="UK flag">🇬🇧</div>
+              <div class="office-flag-big" aria-label="Bandiera UK"><svg class="flag-icon-lg" viewBox="0 0 640 480" width="38" height="26" aria-hidden="true"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#fff" d="m75 0 245 180L565 0h75v60L435 240l205 180v60h-75L320 300 75 480H0v-60l205-180L0 60V0h75z"/><path fill="#c8102e" d="m424 288 216 156v36h-48L376 324l48-36zM640 0v12L420 180l48 36L640 48V0zM0 480v-12l220-168-48-36L0 432v48zm0-480 264 192-48 36L0 72V0z"/><path fill="#fff" d="M260 0h120v480H260zM0 180h640v120H0z"/><path fill="#c8102e" d="M284 0h72v480h-72zM0 204h640v72H0z"/></svg></div>
               <div>
-                <p class="office-card-country">United Kingdom</p>
-                <h2 class="office-card-city">London</h2>
+                <p class="office-card-country">Regno Unito</p>
+                <h2 class="office-card-city">Londra</h2>
               </div>
             </div>
             <div class="office-card-body">
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                <div><p class="office-detail-label">Address</p><p class="office-detail-value">RegineLand Group (UK) Ltd.<br>30 Crown Place, Earl Street<br>London, EC2A 4EB, United Kingdom</p></div>
+                <div><p class="office-detail-label">Indirizzo</p><p class="office-detail-value">RegineLand Group (UK) Ltd.<br>30 Crown Place, Earl Street<br>London, EC2A 4EB, United Kingdom</p></div>
               </div>
               <div class="office-detail">
-                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/></svg></div>
-                <div><p class="office-detail-label">Phone</p><p class="office-detail-value"><a href="tel:+442012345678">+44 20 1234 5678</a></p></div>
+                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div><p class="office-detail-label">Telefono</p><p class="office-detail-value"><a href="tel:+442012345678">+44 20 1234 5678</a></p></div>
               </div>
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                 <div><p class="office-detail-label">Email</p><p class="office-detail-value"><a href="mailto:uk@regineland.com">uk@regineland.com</a></p></div>
               </div>
-              <div style="margin-top:20px;"><a href="contact.html?office=uk" class="btn btn-navy btn-sm" id="contact-uk">Contact UK Office</a></div>
+              <div style="margin-top:20px;"><a href="contact.html?office=uk" class="btn btn-navy btn-sm" id="contact-uk">Contatta Sede UK</a></div>
             </div>
           </article>
 
           <!-- Italy — Milan -->
           <article class="office-card reveal d3" data-country="italy" id="office-italy">
             <div class="office-card-header">
-              <div class="office-flag-big" aria-label="Italy flag">🇮🇹</div>
+              <div class="office-flag-big" aria-label="Bandiera Italia"><svg class="flag-icon-lg" viewBox="0 0 640 480" width="38" height="26" aria-hidden="true"><rect width="213.3" height="480" fill="#009246"/><rect x="213.3" width="213.3" height="480" fill="#fff"/><rect x="426.7" width="213.3" height="480" fill="#ce2b37"/></svg></div>
               <div>
-                <p class="office-card-country">Italy — Northern Hub</p>
-                <h2 class="office-card-city">Milan</h2>
+                <p class="office-card-country">Italia — Hub Settentrionale</p>
+                <h2 class="office-card-city">Milano</h2>
               </div>
             </div>
             <div class="office-card-body">
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                <div><p class="office-detail-label">Indirizzo / Address</p><p class="office-detail-value">RegineLand Group S.r.l.<br>Via Dante 14, 3° Piano<br>20121 Milano MI, Italia</p></div>
+                <div><p class="office-detail-label">Indirizzo</p><p class="office-detail-value">RegineLand Group S.r.l.<br>Via Dante 14, 3° Piano<br>20121 Milano MI, Italia</p></div>
               </div>
               <div class="office-detail">
-                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/></svg></div>
-                <div><p class="office-detail-label">Telefono / Phone</p><p class="office-detail-value"><a href="tel:+390212345678">+39 02 1234 5678</a></p></div>
+                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div><p class="office-detail-label">Telefono</p><p class="office-detail-value"><a href="tel:+390212345678">+39 02 1234 5678</a></p></div>
               </div>
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                 <div><p class="office-detail-label">Email</p><p class="office-detail-value"><a href="mailto:italy@regineland.com">italy@regineland.com</a></p></div>
               </div>
-              <div style="margin-top:20px;"><a href="contact.html?office=italy" class="btn btn-navy btn-sm" id="contact-italy">Contact Italy Office</a></div>
+              <div style="margin-top:20px;"><a href="contact.html?office=italy" class="btn btn-navy btn-sm" id="contact-italy">Contatta Sede Italia</a></div>
             </div>
           </article>
 
           <!-- Italy — Genoa (Port) -->
           <article class="office-card reveal d4" data-country="italy" id="office-genoa">
             <div class="office-card-header">
-              <div class="office-flag-big" aria-label="Italy flag">🇮🇹</div>
+              <div class="office-flag-big" aria-label="Bandiera Italia"><svg class="flag-icon-lg" viewBox="0 0 640 480" width="38" height="26" aria-hidden="true"><rect width="213.3" height="480" fill="#009246"/><rect x="213.3" width="213.3" height="480" fill="#fff"/><rect x="426.7" width="213.3" height="480" fill="#ce2b37"/></svg></div>
               <div>
-                <p class="office-card-country">Italy — Port Operations</p>
-                <h2 class="office-card-city">Genoa</h2>
+                <p class="office-card-country">Italia — Operazioni Portuali</p>
+                <h2 class="office-card-city">Genova</h2>
               </div>
             </div>
             <div class="office-card-body">
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                <div><p class="office-detail-label">Address</p><p class="office-detail-value">RegineLand Group S.r.l. — Porto<br>Calata Gadda 5, Porto di Genova<br>16126 Genova GE, Italia</p></div>
+                <div><p class="office-detail-label">Indirizzo</p><p class="office-detail-value">RegineLand Group S.r.l. — Porto<br>Calata Gadda 5, Porto di Genova<br>16126 Genova GE, Italia</p></div>
               </div>
               <div class="office-detail">
-                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/></svg></div>
-                <div><p class="office-detail-label">Phone</p><p class="office-detail-value"><a href="tel:+390101234567">+39 010 123 4567</a></p></div>
+                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div><p class="office-detail-label">Telefono</p><p class="office-detail-value"><a href="tel:+390101234567">+39 010 123 4567</a></p></div>
               </div>
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                 <div><p class="office-detail-label">Email</p><p class="office-detail-value"><a href="mailto:genoa@regineland.com">genoa@regineland.com</a></p></div>
               </div>
-              <div style="margin-top:20px;"><a href="contact.html?office=italy" class="btn btn-navy btn-sm" id="contact-genoa">Contact Genoa Office</a></div>
+              <div style="margin-top:20px;"><a href="contact.html?office=italy" class="btn btn-navy btn-sm" id="contact-genoa">Contatta Sede Genova</a></div>
             </div>
           </article>
 
           <!-- UAE -->
           <article class="office-card reveal d5" data-country="uae" id="office-uae">
             <div class="office-card-header">
-              <div class="office-flag-big" aria-label="UAE flag">🇦🇪</div>
+              <div class="office-flag-big" aria-label="Bandiera UAE"><svg class="flag-icon-lg" viewBox="0 0 640 480" width="38" height="26" aria-hidden="true"><rect width="640" height="160" fill="#00732f"/><rect y="160" width="640" height="160" fill="#fff"/><rect y="320" width="640" height="160" fill="#000"/><rect width="180" height="480" fill="#f00"/></svg></div>
               <div>
-                <p class="office-card-country">UAE — Gateway Hub</p>
+                <p class="office-card-country">Emirati Arabi Uniti — Hub Gateway</p>
                 <h2 class="office-card-city">Dubai</h2>
               </div>
             </div>
             <div class="office-card-body">
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                <div><p class="office-detail-label">Address</p><p class="office-detail-value">RegineLand Group DMCC<br>Unit 1204, Jumeirah Bay X3, JLT<br>Dubai, United Arab Emirates</p></div>
+                <div><p class="office-detail-label">Indirizzo</p><p class="office-detail-value">RegineLand Group DMCC<br>Unit 1204, Jumeirah Bay X3, JLT<br>Dubai, United Arab Emirates</p></div>
               </div>
               <div class="office-detail">
-                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12"/></svg></div>
-                <div><p class="office-detail-label">Phone</p><p class="office-detail-value"><a href="tel:+97141234567">+971 4 123 4567</a></p></div>
+                <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div><p class="office-detail-label">Telefono</p><p class="office-detail-value"><a href="tel:+97141234567">+971 4 123 4567</a></p></div>
               </div>
               <div class="office-detail">
                 <div class="office-detail-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                 <div><p class="office-detail-label">Email</p><p class="office-detail-value"><a href="mailto:uae@regineland.com">uae@regineland.com</a></p></div>
               </div>
-              <div style="margin-top:20px;"><a href="contact.html?office=uae" class="btn btn-navy btn-sm" id="contact-uae">Contact UAE Office</a></div>
+              <div style="margin-top:20px;"><a href="contact.html?office=uae" class="btn btn-navy btn-sm" id="contact-uae">Contatta Sede UAE</a></div>
             </div>
           </article>
 
@@ -236,18 +271,84 @@
     </section>
   </main>
 
+  <!-- ============ FOOTER ============ -->
   <footer class="site-footer" id="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-top">
-        <div class="footer-grid">
-          <div class="footer-brand"><a href="index.html" class="nav-logo footer-logo"><span class="logo-main">RegineLand</span><span class="logo-tagline">Global Trade &amp; Logistics</span></a><p class="footer-desc">Your trusted bridge for global trade between India, Europe, and the world.</p><div class="footer-certifications"><span class="footer-cert-badge">ISO 9001</span><span class="footer-cert-badge">ISO 13485</span><span class="footer-cert-badge">CE Ready</span><span class="footer-cert-badge">FSSAI</span></div></div>
-          <div class="footer-col"><h4 class="footer-col-title">Company</h4><nav class="footer-links"><a href="about.html">About Us</a><a href="sectors.html">Sectors</a><a href="network.html">Global Network</a><a href="resources.html">Resources</a></nav></div>
-          <div class="footer-col"><h4 class="footer-col-title">Sectors</h4><nav class="footer-links"><a href="sectors.html#healthcare">Healthcare &amp; Medical</a><a href="sectors.html#agrifood">Agri-Food</a><a href="sectors.html#cargo">General Cargo</a><a href="sectors.html#logistics">Integrated Logistics</a></nav></div>
-          <div class="footer-col"><h4 class="footer-col-title">Offices</h4><nav class="footer-links"><a href="#office-india">🇮🇳 India (HQ)</a><a href="#office-uk">🇬🇧 United Kingdom</a><a href="#office-italy">🇮🇹 Italy</a><a href="#office-uae">🇦🇪 UAE</a></nav></div>
-          <div class="footer-col"><h4 class="footer-col-title">Contact</h4><div class="footer-contact-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><a href="mailto:info@regineland.com">info@regineland.com</a></span></div></div>
+        <div class="footer-grid" id="footer-grid">
+          <div class="footer-brand" id="footer-brand">
+            <a href="index.html" class="nav-logo footer-logo" aria-label="RegineLand Group Home">
+              <span class="logo-main">RegineLand</span>
+              <span class="logo-tagline">Commercio &amp; Logistica Globale</span>
+            </a>
+            <p class="footer-desc">Il vostro partner di fiducia per il commercio internazionale tra India, Europa e il mondo.</p>
+            <div class="footer-certifications" aria-label="Le nostre certificazioni">
+              <span class="footer-cert-badge">ISO 9001</span>
+              <span class="footer-cert-badge">ISO 13485</span>
+              <span class="footer-cert-badge">CE Ready</span>
+              <span class="footer-cert-badge">FDA</span>
+              <span class="footer-cert-badge">FSSAI</span>
+            </div>
+          </div>
+
+          <div class="footer-col" id="footer-col-company">
+            <h4 class="footer-col-title">Azienda</h4>
+            <nav class="footer-links" aria-label="Link aziendali">
+              <a href="about.html" id="footer-about">Chi Siamo</a>
+              <a href="about.html#history" id="footer-history">La Nostra Storia</a>
+              <a href="network.html" id="footer-network-link">Rete Globale</a>
+              <a href="about.html#group" id="footer-group">Gruppo &amp; Partner</a>
+              <a href="resources.html" id="footer-resources">Risorse</a>
+            </nav>
+          </div>
+
+          <div class="footer-col" id="footer-col-sectors">
+            <h4 class="footer-col-title">Settori</h4>
+            <nav class="footer-links" aria-label="Link settori">
+              <a href="sectors.html#healthcare" id="footer-healthcare">Sanitario &amp; Medico</a>
+              <a href="sectors.html#agrifood" id="footer-agrifood">Agroalimentare &amp; Beverage</a>
+              <a href="sectors.html#cargo" id="footer-cargo">Merci Generali</a>
+              <a href="sectors.html#logistics" id="footer-logistics">Logistica Integrata</a>
+              <a href="sectors.html#industries" id="footer-industries">Le Nostre Industrie</a>
+            </nav>
+          </div>
+
+          <div class="footer-col" id="footer-col-offices">
+            <h4 class="footer-col-title">Uffici</h4>
+            <nav class="footer-links" aria-label="Link uffici">
+              <a href="network.html#india" id="footer-india"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><rect width="640" height="160" fill="#f93"/><rect y="160" width="640" height="160" fill="#fff"/><rect y="320" width="640" height="160" fill="#128807"/><circle cx="320" cy="240" r="48" fill="none" stroke="#008" stroke-width="8"/><circle cx="320" cy="240" r="12" fill="#008"/></svg>India (HQ)</a>
+              <a href="network.html#uk" id="footer-uk"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#fff" d="m75 0 245 180L565 0h75v60L435 240l205 180v60h-75L320 300 75 480H0v-60l205-180L0 60V0h75z"/><path fill="#c8102e" d="m424 288 216 156v36h-48L376 324l48-36zM640 0v12L420 180l48 36L640 48V0zM0 480v-12l220-168-48-36L0 432v48zm0-480 264 192-48 36L0 72V0z"/><path fill="#fff" d="M260 0h120v480H260zM0 180h640v120H0z"/><path fill="#c8102e" d="M284 0h72v480h-72zM0 204h640v72H0z"/></svg>Regno Unito</a>
+              <a href="network.html#italy" id="footer-italy"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><rect width="213.3" height="480" fill="#009246"/><rect x="213.3" width="213.3" height="480" fill="#fff"/><rect x="426.7" width="213.3" height="480" fill="#ce2b37"/></svg>Italia</a>
+              <a href="network.html#uae" id="footer-uae"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12" aria-hidden="true"><rect width="640" height="160" fill="#00732f"/><rect y="160" width="640" height="160" fill="#fff"/><rect y="320" width="640" height="160" fill="#000"/><rect width="180" height="480" fill="#f00"/></svg>Emirati Arabi</a>
+              <a href="network.html" id="footer-all-offices">Tutti gli Uffici &rarr;</a>
+            </nav>
+          </div>
+
+          <div class="footer-col" id="footer-col-contact">
+            <h4 class="footer-col-title">Sede Italia</h4>
+            <div class="footer-contact-item" id="footer-addr">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Via Dante 14, Milano 20121, Italia</span>
+            </div>
+            <div class="footer-contact-item" id="footer-phone">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span><a href="tel:+390212345678">+39 02 1234 5678</a></span>
+            </div>
+            <div class="footer-contact-item" id="footer-email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span><a href="mailto:italy@regineland.com">italy@regineland.com</a></span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom"><p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. All rights reserved.</p><nav class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></nav></div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. Tutti i diritti riservati.</p>
+        <nav class="footer-legal">
+          <a href="resources.html#compliance">Informativa Privacy</a>
+          <a href="resources.html#terms">Termini di Servizio</a>
+          <a href="contact.html">Conformità</a>
+        </nav>
+      </div>
     </div>
   </footer>
   <script src="../script.js"></script>

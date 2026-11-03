@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>RegineLand Group — Global Logistics & Trade | India · Europe · World</title>
-  <meta name="description" content="RegineLand Group is your trusted bridge for global trade — healthcare & medical supplies, agri-food, and general cargo logistics between India, UK, Italy and the world.">
-  <meta name="keywords" content="global logistics, India Europe trade, medical supply chain, agri food export, cargo logistics, international freight, healthcare logistics India">
+  <meta name="description"
+    content="RegineLand Group is your trusted bridge for global trade — healthcare & medical supplies, agri-food, and general cargo logistics between India, UK, Italy and the world.">
+  <meta name="keywords"
+    content="global logistics, India Europe trade, medical supply chain, agri food export, cargo logistics, international freight, healthcare logistics India">
   <meta property="og:title" content="RegineLand Group — Global Logistics & Trade">
   <meta property="og:description" content="Your Global Logistics & Trade Bridge between India, Europe, and the World.">
   <meta property="og:type" content="website">
@@ -16,31 +19,48 @@
   <link rel="alternate" hreflang="it" href="https://www.regineland.com/it/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Language Bar -->
-  <div class="lang-banner" id="lang-banner" role="navigation" aria-label="Language selection">
-    <span>Also available in:</span>
-    <a href="it/index.html" id="lang-it" hreflang="it">🇮🇹 Italiano</a>
-    <a href="#" id="lang-en" style="color:rgba(255,255,255,0.4);cursor:default;">🇬🇧 English</a>
-  </div>
+  <!-- ============ SITE HEADER ============ -->
+  <header class="site-header transparent transparent-nav" id="site-header" data-transparent="true">
+    <!-- Language Bar -->
+    <div class="lang-banner" id="lang-banner" role="navigation" aria-label="Language selection">
+      <div class="lang-banner-inner">
+        <span class="lang-banner-label">Also available in:</span>
+        <div class="lang-banner-links">
+          <a href="it/index.html" id="lang-it" hreflang="it" class="lang-link"><svg class="flag-icon"
+              viewBox="0 0 640 480" width="16" height="12" aria-hidden="true">
+              <rect width="213.3" height="480" fill="#009246" />
+              <rect x="213.3" width="213.3" height="480" fill="#fff" />
+              <rect x="426.7" width="213.3" height="480" fill="#ce2b37" />
+            </svg>Italiano</a>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <a href="#" id="lang-en" class="lang-link active" aria-current="page"><svg class="flag-icon"
+              viewBox="0 0 640 480" width="16" height="12" aria-hidden="true">
+              <path fill="#012169" d="M0 0h640v480H0z" />
+              <path fill="#fff"
+                d="m75 0 245 180L565 0h75v60L435 240l205 180v60h-75L320 300 75 480H0v-60l205-180L0 60V0h75z" />
+              <path fill="#c8102e"
+                d="m424 288 216 156v36h-48L376 324l48-36zM640 0v12L420 180l48 36L640 48V0zM0 480v-12l220-168-48-36L0 432v48zm0-480 264 192-48 36L0 72V0z" />
+              <path fill="#fff" d="M260 0h120v480H260zM0 180h640v120H0z" />
+              <path fill="#c8102e" d="M284 0h72v480h-72zM0 204h640v72H0z" />
+            </svg>English</a>
+        </div>
+      </div>
+    </div>
 
-  <!-- ============ NAVIGATION ============ -->
-  <header class="site-header transparent" id="site-header">
+    <!-- Main Navigation -->
     <nav class="navbar" id="navbar" aria-label="Main navigation">
       <a href="index.html" class="nav-logo" id="nav-logo" aria-label="RegineLand Group — Home">
         <span class="logo-main">RegineLand</span>
         <span class="logo-tagline">Global Trade &amp; Logistics</span>
       </a>
-
-      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
 
       <ul class="nav-menu" id="nav-menu" role="list">
         <li><a href="index.html" class="nav-link active" id="nav-home">Home</a></li>
@@ -61,6 +81,7 @@
             <a href="sectors.html#agrifood" id="nav-agrifood">🌾 Agri-Food &amp; Beverages</a>
             <a href="sectors.html#cargo" id="nav-cargo">📦 General Cargo &amp; Industrial</a>
             <a href="sectors.html#logistics" id="nav-logistics-link">🚢 Integrated Logistics</a>
+            <a href="sectors.html#industries" id="nav-industries">🌐 Our Industries Worldwide</a>
           </div>
         </li>
         <li><a href="network.html" class="nav-link" id="nav-network">Global Network</a></li>
@@ -72,6 +93,12 @@
         <a href="it/index.html" class="nav-lang" id="nav-lang-it" hreflang="it" title="Versione Italiana">IT</a>
         <a href="contact.html#quote" class="btn btn-gold btn-sm" id="nav-cta">Request a Quote</a>
       </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </nav>
   </header>
 
@@ -81,9 +108,12 @@
     <section class="hero" id="hero" aria-label="Hero — Global Logistics & Trade">
 
       <!-- Slides -->
-      <div class="hero-slide active" id="hero-slide-1" style="background-image: url('assets/hero_logistics.png');" aria-hidden="true"></div>
-      <div class="hero-slide" id="hero-slide-2" style="background-image: url('assets/hero_medical.png');" aria-hidden="true"></div>
-      <div class="hero-slide" id="hero-slide-3" style="background-image: url('assets/hero_food_agri.png');" aria-hidden="true"></div>
+      <div class="hero-slide active" id="hero-slide-1" style="background-image: url('assets/hero_logistics.png');"
+        aria-hidden="true"></div>
+      <div class="hero-slide" id="hero-slide-2" style="background-image: url('assets/hero_medical.png');"
+        aria-hidden="true"></div>
+      <div class="hero-slide" id="hero-slide-3" style="background-image: url('assets/hero_food_agri.png');"
+        aria-hidden="true"></div>
 
       <!-- Content -->
       <div class="hero-content">
@@ -97,11 +127,18 @@
             <em class="hero-title-accent">India, Europe</em><br>and the World
           </h1>
           <p class="hero-subtitle" id="hero-subtitle">
-            RegineLand Group connects markets across continents — delivering compliant, reliable, and efficient trade solutions in healthcare, agri-food, and general cargo.
+            RegineLand Group connects markets across continents — delivering compliant, reliable, and efficient trade
+            solutions in healthcare, agri-food, and general cargo.
           </p>
           <div class="hero-actions" id="hero-actions">
             <a href="contact.html#quote" class="btn btn-gold btn-lg" id="hero-cta-quote">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" class="btn-icon">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
               Request a Quote
             </a>
             <a href="sectors.html" class="btn btn-outline-white" id="hero-cta-sectors">Our Sectors</a>
@@ -131,9 +168,12 @@
 
       <!-- Slider controls -->
       <div class="hero-controls" id="hero-controls" role="tablist" aria-label="Hero slideshow">
-        <button class="hero-dot active" id="hero-dot-1" role="tab" aria-selected="true" aria-label="Slide 1: Ports &amp; Logistics"></button>
-        <button class="hero-dot" id="hero-dot-2" role="tab" aria-selected="false" aria-label="Slide 2: Healthcare &amp; Medical"></button>
-        <button class="hero-dot" id="hero-dot-3" role="tab" aria-selected="false" aria-label="Slide 3: Agri-Food &amp; Beverages"></button>
+        <button class="hero-dot active" id="hero-dot-1" role="tab" aria-selected="true"
+          aria-label="Slide 1: Ports &amp; Logistics"></button>
+        <button class="hero-dot" id="hero-dot-2" role="tab" aria-selected="false"
+          aria-label="Slide 2: Healthcare &amp; Medical"></button>
+        <button class="hero-dot" id="hero-dot-3" role="tab" aria-selected="false"
+          aria-label="Slide 3: Agri-Food &amp; Beverages"></button>
       </div>
 
       <!-- Scroll cue -->
@@ -172,61 +212,227 @@
           <span class="eyebrow">What We Handle</span>
           <div class="divider divider-center" aria-hidden="true"></div>
           <h2 class="section-title" id="sectors-heading">Three Sectors.<br>One Trusted Partner.</h2>
-          <p class="lead">From sterile medical devices to premium agri-food and bulk industrial cargo — we manage the full supply chain with precision and compliance.</p>
+          <p class="lead">From sterile medical devices to premium agri-food and bulk industrial cargo — we manage the
+            full supply chain with precision and compliance.</p>
         </div>
 
         <div class="sectors-grid" id="sectors-main-grid">
 
           <!-- Healthcare -->
           <article class="sector-card reveal" id="sector-healthcare-card">
-            <div class="sector-card-img" style="background-image: url('assets/hero_medical.png');" aria-hidden="true"></div>
+            <div class="sector-card-img" style="background-image: url('assets/hero_medical.png');" aria-hidden="true">
+            </div>
             <div class="sector-card-overlay" aria-hidden="true"></div>
             <div class="sector-card-body">
               <div class="sector-card-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
               </div>
               <h2 class="sector-card-name">Healthcare &amp; Medical</h2>
-              <p class="sector-card-desc">ISO-certified medical devices, pharmaceuticals, and hospital consumables sourced from India — CE/FDA compliant supply chains for European markets.</p>
+              <p class="sector-card-desc">ISO-certified medical devices, pharmaceuticals, and hospital consumables
+                sourced from India — CE/FDA compliant supply chains for European markets.</p>
               <a href="sectors.html#healthcare" class="sector-card-link" id="sector-link-healthcare">
                 Explore Sector
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
               </a>
             </div>
           </article>
 
           <!-- Agri-Food -->
           <article class="sector-card reveal d1" id="sector-agrifood-card">
-            <div class="sector-card-img" style="background-image: url('assets/hero_food_agri.png');" aria-hidden="true"></div>
+            <div class="sector-card-img" style="background-image: url('assets/hero_food_agri.png');" aria-hidden="true">
+            </div>
             <div class="sector-card-overlay" aria-hidden="true"></div>
             <div class="sector-card-body">
               <div class="sector-card-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12c0-2.76 1.12-5.26 2.93-7.07"/><path d="M12 6v6l4 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12c0-2.76 1.12-5.26 2.93-7.07" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
               </div>
               <h2 class="sector-card-name">Agri-Food &amp; Beverages</h2>
-              <p class="sector-card-desc">Premium Indian spices, basmati rice, tea, pulses, and processed food exports to European retail and distribution networks — full cold-chain &amp; phytosanitary compliance.</p>
+              <p class="sector-card-desc">Premium Indian spices, basmati rice, tea, pulses, and processed food exports
+                to European retail and distribution networks — full cold-chain &amp; phytosanitary compliance.</p>
               <a href="sectors.html#agrifood" class="sector-card-link" id="sector-link-agrifood">
                 Explore Sector
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
               </a>
             </div>
           </article>
 
           <!-- General Cargo -->
           <article class="sector-card reveal d2" id="sector-cargo-card">
-            <div class="sector-card-img" style="background-image: url('assets/hero_logistics.png');" aria-hidden="true"></div>
+            <div class="sector-card-img" style="background-image: url('assets/hero_logistics.png');" aria-hidden="true">
+            </div>
             <div class="sector-card-overlay" aria-hidden="true"></div>
             <div class="sector-card-body">
               <div class="sector-card-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="3" width="15" height="13" rx="1" />
+                  <path d="M16 8h4l3 3v5h-7V8z" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg>
               </div>
               <h2 class="sector-card-name">General Cargo &amp; Industrial</h2>
-              <p class="sector-card-desc">FCL/LCL ocean freight, air cargo, customs clearance, and warehousing for industrial goods, textiles, machinery, and manufacturing components.</p>
+              <p class="sector-card-desc">FCL/LCL ocean freight, air cargo, customs clearance, and warehousing for
+                industrial goods, textiles, machinery, and manufacturing components.</p>
               <a href="sectors.html#cargo" class="sector-card-link" id="sector-link-cargo">
                 Explore Sector
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
               </a>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OUR INDUSTRIES WORLDWIDE ============ -->
+    <section class="section industries-section" id="industries" aria-labelledby="industries-heading">
+      <div class="container">
+        <div class="section-header centered reveal" id="industries-header">
+          <span class="eyebrow">The RegineLand Group</span>
+          <div class="divider divider-center" aria-hidden="true"></div>
+          <h2 class="section-title" id="industries-heading">Our Industries Worldwide</h2>
+          <p class="lead" style="max-width: 720px; margin: 0 auto;">Six specialized operating businesses driving our global footprint — uniting traditional heritage, certified medical care, high-end beauty, sustainable agribusiness, European freight, and cross-border trade.</p>
+        </div>
+
+        <div class="industries-grid" id="industries-grid">
+
+          <!-- 01 Flavours Foods International -->
+          <article class="industry-card reveal" id="industry-01">
+            <div class="industry-card-top">
+              <span class="industry-num">01</span>
+              <span class="industry-badge badge-food">Food &amp; Gourmet</span>
+            </div>
+            <div class="industry-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3 class="industry-name">Flavours Foods International</h3>
+            <p class="industry-desc">Delivering traditional Kerala foods and international gourmet products to global markets.</p>
+            <div class="industry-footer">
+              <span class="industry-scope">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Kerala, India ➔ Global Markets
+              </span>
+            </div>
+          </article>
+
+          <!-- 02 RegineLand MediCare + -->
+          <article class="industry-card reveal d1" id="industry-02">
+            <div class="industry-card-top">
+              <span class="industry-num">02</span>
+              <span class="industry-badge badge-healthcare">Healthcare</span>
+            </div>
+            <div class="industry-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 class="industry-name">RegineLand MediCare +</h3>
+            <p class="industry-desc">Providing essential healthcare products with uncompromising quality and reliability worldwide.</p>
+            <div class="industry-footer">
+              <span class="industry-scope">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Certified Medical &amp; Hospital Supplies
+              </span>
+            </div>
+          </article>
+
+          <!-- 03 RegineCeleste -->
+          <article class="industry-card reveal d2" id="industry-03">
+            <div class="industry-card-top">
+              <span class="industry-num">03</span>
+              <span class="industry-badge badge-beauty">Beauty &amp; Skincare</span>
+            </div>
+            <div class="industry-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 class="industry-name">RegineCeleste</h3>
+            <p class="industry-desc">Offering premium cosmetics and skincare solutions that blend innovation with elegance.</p>
+            <div class="industry-footer">
+              <a href="https://regineceleste.com/" target="_blank" rel="noopener noreferrer" class="industry-link" id="index-link-regineceleste">
+                RegineCeleste.com
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 04 Cannberry Farms. -->
+          <article class="industry-card reveal" id="industry-04">
+            <div class="industry-card-top">
+              <span class="industry-num">04</span>
+              <span class="industry-badge badge-agri">Agribusiness</span>
+            </div>
+            <div class="industry-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12c0-2.76 1.12-5.26 2.93-7.07"/><path d="M12 2v6"/><circle cx="12" cy="14" r="3"/></svg>
+            </div>
+            <h3 class="industry-name">Cannberry Farms.</h3>
+            <p class="industry-desc">Producing and distributing high-quality canned fruits from Wyoming, USA to international markets.</p>
+            <div class="industry-footer">
+              <span class="industry-scope">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Wyoming, USA ➔ Global Markets
+              </span>
+            </div>
+          </article>
+
+          <!-- 05 Wessland Logistics Europe -->
+          <article class="industry-card reveal d1" id="industry-05">
+            <div class="industry-card-top">
+              <span class="industry-num">05</span>
+              <span class="industry-badge badge-logistics">Logistics &amp; Cargo</span>
+            </div>
+            <div class="industry-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3 class="industry-name">Wessland Logistics Europe</h3>
+            <p class="industry-desc">Ensuring seamless shipping and cargo operations for businesses across Europe.</p>
+            <div class="industry-footer">
+              <span class="industry-scope">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                Pan-European Shipping &amp; Cargo
+              </span>
+            </div>
+          </article>
+
+          <!-- 06 Kochuparambil Exporters -->
+          <article class="industry-card reveal d2" id="industry-06">
+            <div class="industry-card-top">
+              <span class="industry-num">06</span>
+              <span class="industry-badge badge-trade">Export Trade</span>
+            </div>
+            <div class="industry-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="industry-name">Kochuparambil Exporters</h3>
+            <p class="industry-desc">Facilitating export trade, connecting authentic products with customers around the world.</p>
+            <div class="industry-footer">
+              <span class="industry-scope">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+                Global Trade &amp; Authentic Exports
+              </span>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="margin-top: 48px; text-align: center;" class="reveal">
+          <a href="sectors.html#industries" class="btn btn-navy" id="index-industries-cta">Explore All Industries &amp; Services</a>
         </div>
       </div>
     </section>
@@ -243,43 +449,75 @@
 
           <a href="contact.html#quote" class="quick-action-card reveal" id="qa-quote">
             <div class="qa-icon qa-icon-gold" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <polyline points="10 9 9 9 8 9" />
+              </svg>
             </div>
             <h3 class="qa-title">Request a Quote</h3>
-            <p class="qa-desc">Get a tailored freight or trade quote within 24 hours. Specify origin, destination, commodity, and Incoterms — we do the rest.</p>
+            <p class="qa-desc">Get a tailored freight or trade quote within 24 hours. Specify origin, destination,
+              commodity, and Incoterms — we do the rest.</p>
             <span class="qa-arrow">
               Get a Quote
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </span>
           </a>
 
           <a href="contact.html#track" class="quick-action-card reveal d1" id="qa-track">
             <div class="qa-icon qa-icon-blue" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
             </div>
             <h3 class="qa-title">Track a Shipment</h3>
-            <p class="qa-desc">Real-time visibility on your cargo. Enter your booking reference or container number and get instant status updates.</p>
+            <p class="qa-desc">Real-time visibility on your cargo. Enter your booking reference or container number and
+              get instant status updates.</p>
             <span class="qa-arrow">
               Track Now
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </span>
           </a>
 
           <a href="network.html" class="quick-action-card reveal d2" id="qa-offices">
             <div class="qa-icon qa-icon-teal" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
             </div>
             <h3 class="qa-title">Contact Our Offices</h3>
-            <p class="qa-desc">Speak directly with our local teams in India, UK, or Italy. Every inquiry is routed to the right expert in your region.</p>
+            <p class="qa-desc">Speak directly with our local teams in India, UK, or Italy. Every inquiry is routed to
+              the right expert in your region.</p>
             <span class="qa-arrow">
               Find an Office
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </span>
           </a>
 
         </div>
       </div>
     </section>
+
+
 
     <!-- ============ WHY CHOOSE US ============ -->
     <section class="section why-us" id="why-us" aria-labelledby="why-heading">
@@ -299,43 +537,66 @@
             <span class="eyebrow">Why RegineLand Group</span>
             <div class="divider" aria-hidden="true"></div>
             <h2 class="section-title" id="why-heading">Trusted by B2B Buyers<br>Across Three Continents</h2>
-            <p class="lead" style="margin-bottom: 0;">From port to warehouse to final delivery — we manage every link of the chain with compliance, transparency, and precision.</p>
+            <p class="lead" style="margin-bottom: 0;">From port to warehouse to final delivery — we manage every link of
+              the chain with compliance, transparency, and precision.</p>
 
             <div class="why-list" id="why-list">
               <div class="why-item reveal d1" id="why-item-1">
                 <div class="why-item-icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
                 </div>
                 <div>
                   <h3 class="why-item-title">Regulatory Compliance</h3>
-                  <p class="why-item-desc">ISO 13485, CE marking, FDA readiness, FSSAI, and phytosanitary compliance — we handle documentation for every market.</p>
+                  <p class="why-item-desc">ISO 13485, CE marking, FDA readiness, FSSAI, and phytosanitary compliance —
+                    we handle documentation for every market.</p>
                 </div>
               </div>
               <div class="why-item reveal d2" id="why-item-2">
                 <div class="why-item-icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  </svg>
                 </div>
                 <div>
                   <h3 class="why-item-title">Multi-Country Network</h3>
-                  <p class="why-item-desc">Direct offices in India, UK, Italy, and beyond — giving you local expertise with a global reach across every trade corridor.</p>
+                  <p class="why-item-desc">Direct offices in India, UK, Italy, and beyond — giving you local expertise
+                    with a global reach across every trade corridor.</p>
                 </div>
               </div>
               <div class="why-item reveal d3" id="why-item-3">
                 <div class="why-item-icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <rect x="1" y="3" width="15" height="13" rx="1" />
+                    <path d="M16 8h4l3 3v5h-7V8z" />
+                    <circle cx="5.5" cy="18.5" r="2.5" />
+                    <circle cx="18.5" cy="18.5" r="2.5" />
+                  </svg>
                 </div>
                 <div>
                   <h3 class="why-item-title">End-to-End Logistics</h3>
-                  <p class="why-item-desc">Ocean freight (FCL/LCL), air freight, customs clearance, warehousing — one partner for the complete supply chain journey.</p>
+                  <p class="why-item-desc">Ocean freight (FCL/LCL), air freight, customs clearance, warehousing — one
+                    partner for the complete supply chain journey.</p>
                 </div>
               </div>
               <div class="why-item reveal d4" id="why-item-4">
                 <div class="why-item-icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  </svg>
                 </div>
                 <div>
                   <h3 class="why-item-title">Real-Time Visibility</h3>
-                  <p class="why-item-desc">Track your shipments at every milestone. Our digital platform gives you live status, estimated arrival, and full documentation access.</p>
+                  <p class="why-item-desc">Track your shipments at every milestone. Our digital platform gives you live
+                    status, estimated arrival, and full documentation access.</p>
                 </div>
               </div>
             </div>
@@ -349,13 +610,17 @@
       </div>
     </section>
 
+
+
     <!-- ============ GLOBAL OFFICES STRIP ============ -->
     <section class="section-sm network-strip" id="network-strip" aria-labelledby="offices-heading">
       <div class="container">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; flex-wrap: gap; gap: 16px;">
+        <div
+          style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; flex-wrap: gap; gap: 16px;">
           <div>
             <span class="eyebrow" style="color: rgba(255,255,255,0.5)">Our Presence</span>
-            <h2 class="section-title section-title-light" id="offices-heading" style="font-size: 1.6rem; margin-bottom: 0;">Offices Around the Globe</h2>
+            <h2 class="section-title section-title-light" id="offices-heading"
+              style="font-size: 1.6rem; margin-bottom: 0;">Offices Around the Globe</h2>
           </div>
           <a href="network.html" class="btn btn-outline-white btn-sm" id="offices-view-all">View All Offices</a>
         </div>
@@ -399,6 +664,8 @@
       </div>
     </section>
 
+
+
     <!-- ============ CERTIFICATIONS MARQUEE ============ -->
     <div class="cert-strip" id="cert-strip" role="region" aria-label="Certifications and standards">
       <div class="cert-track">
@@ -429,7 +696,8 @@
     <!-- ============ LATEST NEWS ============ -->
     <section class="section news-preview" id="news-preview" aria-labelledby="news-heading">
       <div class="container">
-        <div class="section-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+        <div class="section-header"
+          style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
           <div>
             <span class="eyebrow">Stay Informed</span>
             <div class="divider" aria-hidden="true"></div>
@@ -442,7 +710,8 @@
             <div class="news-card-img" style="background-image: url('assets/hero_medical.png');"></div>
             <div class="news-card-body">
               <span class="news-tag">Healthcare</span>
-              <h3 class="news-card-title">New EU MDR Regulations: What Indian Medical Device Exporters Need to Know in 2025</h3>
+              <h3 class="news-card-title">New EU MDR Regulations: What Indian Medical Device Exporters Need to Know in
+                2025</h3>
               <p class="news-card-date">October 2026</p>
             </div>
           </article>
@@ -450,7 +719,8 @@
             <div class="news-card-img" style="background-image: url('assets/hero_food_agri.png');"></div>
             <div class="news-card-body">
               <span class="news-tag">Agri-Food</span>
-              <h3 class="news-card-title">India–EU Free Trade Agreement Update: Impact on Agri-Food Tariffs and Export Opportunities</h3>
+              <h3 class="news-card-title">India–EU Free Trade Agreement Update: Impact on Agri-Food Tariffs and Export
+                Opportunities</h3>
               <p class="news-card-date">September 2026</p>
             </div>
           </article>
@@ -466,18 +736,24 @@
       </div>
     </section>
 
+
+
     <!-- ============ CTA BANNER ============ -->
     <section class="section-sm section-dark" id="cta-banner" aria-label="Call to action">
       <div class="container" style="text-align:center;">
         <span class="eyebrow" style="color:rgba(255,255,255,0.4)">Start Your Journey</span>
-        <h2 class="section-title section-title-light reveal" style="max-width:600px; margin: 0 auto 20px;">Ready to Move Your Cargo<br>Across Borders?</h2>
-        <p class="lead lead-light reveal d1" style="max-width:480px; margin: 0 auto 36px;">Connect with our trade specialists today. Get a personalised quote, compliance advice, or simply learn more about our services.</p>
+        <h2 class="section-title section-title-light reveal" style="max-width:600px; margin: 0 auto 20px;">Ready to Move
+          Your Cargo<br>Across Borders?</h2>
+        <p class="lead lead-light reveal d1" style="max-width:480px; margin: 0 auto 36px;">Connect with our trade
+          specialists today. Get a personalised quote, compliance advice, or simply learn more about our services.</p>
         <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;" class="reveal d2">
           <a href="contact.html#quote" class="btn btn-gold btn-lg" id="cta-banner-quote">Request a Quote</a>
           <a href="about.html" class="btn btn-outline-white" id="cta-banner-about">Learn About Us</a>
         </div>
       </div>
     </section>
+
+
 
   </main>
 
@@ -491,7 +767,8 @@
               <span class="logo-main">RegineLand</span>
               <span class="logo-tagline">Global Trade &amp; Logistics</span>
             </a>
-            <p class="footer-desc">Your trusted bridge for global trade — connecting Indian manufacturers and producers with markets in Europe and beyond.</p>
+            <p class="footer-desc">Your trusted bridge for global trade — connecting Indian manufacturers and producers
+              with markets in Europe and beyond.</p>
             <div class="footer-certifications" aria-label="Our certifications">
               <span class="footer-cert-badge">ISO 9001</span>
               <span class="footer-cert-badge">ISO 13485</span>
@@ -519,41 +796,90 @@
               <a href="sectors.html#agrifood" id="footer-agrifood">Agri-Food &amp; Beverages</a>
               <a href="sectors.html#cargo" id="footer-cargo">General Cargo</a>
               <a href="sectors.html#logistics" id="footer-logistics">Integrated Logistics</a>
+              <a href="sectors.html#industries" id="footer-industries">Our Industries Worldwide</a>
             </nav>
           </div>
 
           <div class="footer-col" id="footer-col-offices">
             <h4 class="footer-col-title">Offices</h4>
             <nav class="footer-links" aria-label="Office links">
-              <a href="network.html#india" id="footer-india">🇮🇳 India (HQ)</a>
-              <a href="network.html#uk" id="footer-uk">🇬🇧 United Kingdom</a>
-              <a href="network.html#italy" id="footer-italy">🇮🇹 Italy</a>
-              <a href="network.html#uae" id="footer-uae">🇦🇪 UAE</a>
-              <a href="network.html" id="footer-all-offices">All Offices →</a>
+              <a href="network.html#india" id="footer-india"><svg class="flag-icon" viewBox="0 0 640 480" width="16"
+                  height="12" aria-hidden="true">
+                  <rect width="640" height="160" fill="#f93" />
+                  <rect y="160" width="640" height="160" fill="#fff" />
+                  <rect y="320" width="640" height="160" fill="#128807" />
+                  <circle cx="320" cy="240" r="48" fill="none" stroke="#008" stroke-width="8" />
+                  <circle cx="320" cy="240" r="12" fill="#008" />
+                </svg>India (HQ)</a>
+              <a href="network.html#uk" id="footer-uk"><svg class="flag-icon" viewBox="0 0 640 480" width="16"
+                  height="12" aria-hidden="true">
+                  <path fill="#012169" d="M0 0h640v480H0z" />
+                  <path fill="#fff"
+                    d="m75 0 245 180L565 0h75v60L435 240l205 180v60h-75L320 300 75 480H0v-60l205-180L0 60V0h75z" />
+                  <path fill="#c8102e"
+                    d="m424 288 216 156v36h-48L376 324l48-36zM640 0v12L420 180l48 36L640 48V0zM0 480v-12l220-168-48-36L0 432v48zm0-480 264 192-48 36L0 72V0z" />
+                  <path fill="#fff" d="M260 0h120v480H260zM0 180h640v120H0z" />
+                  <path fill="#c8102e" d="M284 0h72v480h-72zM0 204h640v72H0z" />
+                </svg>United Kingdom</a>
+              <a href="network.html#italy" id="footer-italy"><svg class="flag-icon" viewBox="0 0 640 480" width="16"
+                  height="12" aria-hidden="true">
+                  <rect width="213.3" height="480" fill="#009246" />
+                  <rect x="213.3" width="213.3" height="480" fill="#fff" />
+                  <rect x="426.7" width="213.3" height="480" fill="#ce2b37" />
+                </svg>Italy</a>
+              <a href="network.html#uae" id="footer-uae"><svg class="flag-icon" viewBox="0 0 640 480" width="16"
+                  height="12" aria-hidden="true">
+                  <rect width="640" height="160" fill="#00732f" />
+                  <rect y="160" width="640" height="160" fill="#fff" />
+                  <rect y="320" width="640" height="160" fill="#000" />
+                  <rect width="180" height="480" fill="#f00" />
+                </svg>UAE</a>
+              <a href="network.html" id="footer-all-offices">All Offices &rarr;</a>
             </nav>
           </div>
 
           <div class="footer-col" id="footer-col-contact">
             <h4 class="footer-col-title">Global HQ — India</h4>
             <div class="footer-contact-item" id="footer-addr">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Mumbai, Maharashtra, India</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" width="16" height="16">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Poovakulam, Kottayam Dist., Kerala, India</span>
             </div>
             <div class="footer-contact-item" id="footer-phone">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" width="16" height="16">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.86-.86a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
               <span><a href="tel:+911234567890">+91 12 3456 7890</a></span>
             </div>
             <div class="footer-contact-item" id="footer-email">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" width="16" height="16">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
               <span><a href="mailto:info@regineland.com">info@regineland.com</a></span>
             </div>
-            <a href="it/index.html" style="display:inline-flex; align-items:center; gap:6px; font-size:0.8rem; color:rgba(255,255,255,0.4); margin-top:16px; transition:color 0.2s;" onmouseover="this.style.color='#e0b55a'" onmouseout="this.style.color='rgba(255,255,255,0.4)'" id="footer-lang-it">🇮🇹 Versione Italiana →</a>
+            <a href="it/index.html"
+              style="display:inline-flex; align-items:center; gap:6px; font-size:0.8rem; color:rgba(255,255,255,0.4); margin-top:16px; transition:color 0.2s;"
+              onmouseover="this.style.color='#e0b55a'" onmouseout="this.style.color='rgba(255,255,255,0.4)'"
+              id="footer-lang-it"><svg class="flag-icon" viewBox="0 0 640 480" width="16" height="12"
+                aria-hidden="true">
+                <rect width="213.3" height="480" fill="#009246" />
+                <rect x="213.3" width="213.3" height="480" fill="#fff" />
+                <rect x="426.7" width="213.3" height="480" fill="#ce2b37" />
+              </svg>Versione Italiana &rarr;</a>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom" id="footer-bottom">
-        <p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. All rights reserved. Registered in India &amp; UK.</p>
+        <p class="footer-copy">&copy; <span id="current-year"></span> RegineLand Group. All rights reserved. Registered
+          in India &amp; UK.</p>
         <nav class="footer-legal" aria-label="Legal links">
           <a href="#" id="footer-privacy">Privacy Policy</a>
           <a href="#" id="footer-terms">Terms of Service</a>
@@ -565,4 +891,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

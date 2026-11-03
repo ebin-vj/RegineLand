@@ -5,12 +5,20 @@
 'use strict';
 
 // =========================================
-// 1. NAV: Transparent → Solid on scroll
+// 1. NAV: Transparent ↔ Solid on scroll
 // =========================================
 (function initNav() {
   const header = document.getElementById('site-header');
   if (!header) return;
-  const threshold = 60;
+
+  const isTransparentNav = header.classList.contains('transparent-nav');
+  if (!isTransparentNav) {
+    header.classList.remove('transparent');
+    header.classList.add('solid');
+    return;
+  }
+
+  const threshold = 40;
   function updateNav() {
     if (window.scrollY > threshold) {
       header.classList.remove('transparent');
@@ -136,8 +144,9 @@
 // 6. FOOTER YEAR
 // =========================================
 (function setYear() {
-  const el = document.getElementById('current-year');
-  if (el) el.textContent = new Date().getFullYear();
+  document.querySelectorAll('#current-year, .current-year').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
 })();
 
 // =========================================
@@ -190,8 +199,8 @@
       const sec    = document.getElementById(target);
       if (sec) {
         const offset = document.querySelector('.sector-nav')?.offsetHeight || 0;
-        const navH   = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 76;
-        window.scrollTo({ top: sec.offsetTop - offset - navH - 20, behavior: 'smooth' });
+        const headerH = document.getElementById('site-header')?.offsetHeight || 108;
+        window.scrollTo({ top: sec.offsetTop - offset - headerH - 12, behavior: 'smooth' });
       }
     });
   });
@@ -304,8 +313,8 @@
       const el  = document.getElementById(id);
       if (!el) return;
       e.preventDefault();
-      const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 76;
-      window.scrollTo({ top: el.offsetTop - navH - 20, behavior: 'smooth' });
+      const headerH = document.getElementById('site-header')?.offsetHeight || 108;
+      window.scrollTo({ top: el.offsetTop - headerH - 12, behavior: 'smooth' });
     });
   });
 })();
@@ -352,4 +361,30 @@
     langEn.style.color = '';
     langEn.style.cursor = '';
   }
+})();
+
+// =========================================
+// 14. BRANDS FILTER (brands page)
+// =========================================
+(function initBrandsFilter() {
+  const filterBtns = document.querySelectorAll('.brands-filter .filter-btn');
+  const brandCards = document.querySelectorAll('.brands-full-grid .brand-card');
+  if (!filterBtns.length || !brandCards.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+
+      brandCards.forEach(card => {
+        const sector = card.getAttribute('data-sector');
+        const match = filter === 'all' || sector === filter;
+        card.style.display = match ? '' : 'none';
+        if (match) {
+          card.style.animation = 'countUp 0.35s ease both';
+        }
+      });
+    });
+  });
 })();
