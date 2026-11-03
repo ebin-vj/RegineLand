@@ -286,7 +286,7 @@
     setTimeout(() => {
       if (submitBtn) {
         submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg> Message Sent!';
-        submitBtn.style.background = '#1a7a6e';
+        submitBtn.style.background = '#633A78';
         submitBtn.style.color = '#fff';
       }
       form.reset();
