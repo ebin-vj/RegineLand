@@ -36,11 +36,24 @@
 // 2. MOBILE NAV TOGGLE
 // =========================================
 (function initMobileNav() {
+  // Navigation is managed single-source by components.js.
+  // Avoid duplicate listeners that cause toggle cancelation.
+  if (window.__regineland_nav_initialized) return;
+
   const toggle = document.getElementById('nav-toggle');
   const menu   = document.getElementById('nav-menu');
   if (!toggle || !menu) return;
 
-  toggle.addEventListener('click', () => {
+  function closeNav() {
+    menu.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.querySelectorAll('.hamburger-line').forEach(l => {
+      l.style.transform = ''; l.style.opacity = '';
+    });
+  }
+
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     const open = menu.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(open));
     const lines = toggle.querySelectorAll('.hamburger-line');
@@ -54,24 +67,12 @@
   });
 
   // Close on link click
-  menu.querySelectorAll('a').forEach(a =>
-    a.addEventListener('click', () => {
-      menu.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.querySelectorAll('.hamburger-line').forEach(l => {
-        l.style.transform = ''; l.style.opacity = '';
-      });
-    })
-  );
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
 
   // Close on outside click
   document.addEventListener('click', e => {
-    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
-      menu.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.querySelectorAll('.hamburger-line').forEach(l => {
-        l.style.transform = ''; l.style.opacity = '';
-      });
+    if (menu.classList.contains('open') && !toggle.contains(e.target) && !menu.contains(e.target)) {
+      closeNav();
     }
   });
 })();
@@ -250,9 +251,31 @@
 // 10. SMART CONTACT FORM
 // =========================================
 (function initContactForm() {
-  const form    = document.getElementById('contact-form');
-  const submitBtn = form?.querySelector('.form-submit');
+  const form      = document.getElementById('contact-form');
   if (!form) return;
+
+  const submitBtn = form.querySelector('.form-submit');
+  const gdprBox   = document.getElementById('contact-gdpr');
+  const gdprLabel = document.getElementById('contact-gdpr-label') || gdprBox?.closest('label');
+  const gdprError = document.getElementById('contact-gdpr-error');
+  const isIt      = document.documentElement.lang === 'it' || window.location.pathname.includes('/it/');
+
+  // Update submit button availability and feedback based on checkbox state
+  function updateCheckboxState() {
+    if (!gdprBox || !submitBtn) return;
+    const isChecked = gdprBox.checked;
+    submitBtn.disabled = !isChecked;
+    if (isChecked) {
+      if (gdprLabel) gdprLabel.classList.remove('has-error');
+      if (gdprError) gdprError.classList.remove('show');
+    }
+  }
+
+  // Enforce initial state: disabled if unchecked
+  if (gdprBox && submitBtn) {
+    updateCheckboxState();
+    gdprBox.addEventListener('change', updateCheckboxState);
+  }
 
   // Auto-populate office email based on selected office
   const officeSelect  = document.getElementById('contact-office');
@@ -269,7 +292,8 @@
     officeSelect.addEventListener('change', () => {
       const val = officeSelect.value;
       if (val && officeEmails[val]) {
-        officeEmailEl.textContent = `Your message will be sent to: ${officeEmails[val]}`;
+        const prefix = isIt ? 'Il messaggio sarà inviato a:' : 'Your message will be sent to:';
+        officeEmailEl.textContent = `${prefix} ${officeEmails[val]}`;
         officeEmailEl.style.display = 'block';
       } else {
         officeEmailEl.style.display = 'none';
@@ -279,24 +303,60 @@
 
   form.addEventListener('submit', e => {
     e.preventDefault();
+
+    // STRICT GUARD: Do not allow sending message unless checkbox is checked!
+    if (!gdprBox || !gdprBox.checked) {
+      if (gdprLabel) gdprLabel.classList.add('has-error');
+      if (gdprError) gdprError.classList.add('show');
+      if (gdprBox) gdprBox.focus();
+      return false;
+    }
+
+    // Validate required fields
+    const requiredInputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+    let hasEmpty = false;
+    requiredInputs.forEach(input => {
+      if (!input.value.trim()) {
+        hasEmpty = true;
+        input.classList.add('has-error');
+        input.addEventListener('input', () => input.classList.remove('has-error'), { once: true });
+        input.addEventListener('change', () => input.classList.remove('has-error'), { once: true });
+      } else {
+        input.classList.remove('has-error');
+      }
+    });
+
+    if (hasEmpty) {
+      const firstEmpty = form.querySelector('.has-error');
+      if (firstEmpty) firstEmpty.focus();
+      return false;
+    }
+
+    // Proceed with sending message (ONLY because checkbox is checked)
     if (submitBtn) {
-      submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Sending…';
+      const sendingText = isIt ? 'Invio in corso…' : 'Sending…';
+      submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> ${sendingText}`;
       submitBtn.disabled = true;
     }
+
     setTimeout(() => {
       if (submitBtn) {
-        submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg> Message Sent!';
+        const sentText = isIt ? 'Messaggio Inviato!' : 'Message Sent!';
+        submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg> ${sentText}`;
         submitBtn.style.background = '#633A78';
         submitBtn.style.color = '#fff';
       }
       form.reset();
+      updateCheckboxState(); // Automatically returns submit button to disabled
       if (officeEmailEl) officeEmailEl.style.display = 'none';
+
       setTimeout(() => {
         if (submitBtn) {
-          submitBtn.innerHTML = 'Send Message <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
+          const defaultText = isIt ? 'Invia Messaggio' : 'Send Message';
+          submitBtn.innerHTML = `${defaultText} <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>`;
           submitBtn.style.background = '';
           submitBtn.style.color = '';
-          submitBtn.disabled = false;
+          updateCheckboxState();
         }
       }, 4000);
     }, 1500);

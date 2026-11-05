@@ -10,7 +10,7 @@
     content="Explore the brands under RegineLand Group — spanning beauty, logistics, food, and healthcare. Each brand is purposefully built with its own identity and vision.">
   <meta property="og:title" content="Our Brands — RegineLand Group">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.regineland.com/brands">
+  <meta property="og:url" content="https://www.regineland.com/brands.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -26,15 +26,21 @@
        ============================================= -->
   <header class="site-header" id="site-header"></header>
 
-  <main>
+  <main id="main-content">
 
-    <!-- PAGE HERO -->
-    <section class="page-hero" id="brands-page-hero">
-      <span class="eyebrow">Our Portfolio</span>
-      <h1 class="page-hero-title">Brands that speak<br>for themselves.</h1>
-      <p class="page-hero-desc">Each brand under RegineLand Group carries its own distinct identity, audience, and
-        purpose — yet every one is built on the same foundation of craft, clarity, and character.</p>
-    </section>
+    <!-- PAGE HEADER -->
+    <div class="page-header" id="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">&#8250;</span>
+          <span>Our Brands</span>
+        </nav>
+        <span class="eyebrow page-header-eyebrow">Our Portfolio</span>
+        <h1 class="page-header-title">Brands that speak<br>for themselves.</h1>
+        <p class="page-header-desc">Each brand under RegineLand Group carries its own distinct identity, audience, and purpose &mdash; yet every one is built on the same foundation of craft, clarity, and character.</p>
+      </div>
+    </div>
 
     <!-- BRANDS SECTION -->
     <section class="section" id="brands-listing">
@@ -55,7 +61,7 @@
 
           <!-- 01 Flavours Foods International -->
           <article class="brand-card reveal" data-sector="food" id="brand-flavours">
-            <div class="brand-card-visual food-bg" id="brand-visual-flavours"></div>
+            <div class="brand-card-visual food-bg" id="brand-visual-flavours" role="img" aria-label="Flavours Foods International - Traditional Kerala foods and gourmet spices"></div>
             <div class="brand-card-body">
               <p class="brand-card-sector">01 · Food &amp; Gourmet</p>
               <h2 class="brand-card-name">Flavours Foods International</h2>
@@ -66,7 +72,7 @@
 
           <!-- 02 RegineLand MediCare + -->
           <article class="brand-card reveal reveal-delay-1" data-sector="healthcare" id="brand-medicare">
-            <div class="brand-card-visual healthcare-bg" id="brand-visual-medicare"></div>
+            <div class="brand-card-visual healthcare-bg" id="brand-visual-medicare" role="img" aria-label="RegineLand MediCare + - Essential healthcare and certified medical supplies"></div>
             <div class="brand-card-body">
               <p class="brand-card-sector">02 · Healthcare</p>
               <h2 class="brand-card-name">RegineLand MediCare +</h2>
@@ -77,7 +83,7 @@
 
           <!-- 03 RegineCeleste -->
           <article class="brand-card reveal reveal-delay-2" data-sector="beauty" id="brand-regineceleste">
-            <div class="brand-card-visual beauty-bg" id="brand-visual-regineceleste"></div>
+            <div class="brand-card-visual beauty-bg" id="brand-visual-regineceleste" role="img" aria-label="RegineCeleste - Luxury cosmetics and skincare solutions"></div>
             <div class="brand-card-body">
               <p class="brand-card-sector">03 · Beauty &amp; Skincare</p>
               <h2 class="brand-card-name">RegineCeleste</h2>
@@ -85,7 +91,7 @@
               <div style="margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
                 <span class="brand-card-status">Official Brand</span>
                 <a href="https://regineceleste.com/" target="_blank" rel="noopener noreferrer" class="industry-link" id="brand-link-regineceleste">
-                  RegineCeleste.com ↗
+                  RegineCeleste.com &#8599;
                 </a>
               </div>
             </div>
@@ -93,7 +99,7 @@
 
           <!-- 04 Cannberry Farms. -->
           <article class="brand-card reveal" data-sector="food" id="brand-cannberry">
-            <div class="brand-card-visual agri-bg" id="brand-visual-cannberry"></div>
+            <div class="brand-card-visual agri-bg" id="brand-visual-cannberry" role="img" aria-label="Cannberry Farms - Premium canned fruits and agribusiness from Wyoming USA"></div>
             <div class="brand-card-body">
               <p class="brand-card-sector">04 · Agribusiness</p>
               <h2 class="brand-card-name">Cannberry Farms.</h2>
@@ -104,7 +110,7 @@
 
           <!-- 05 Wessland Logistics Europe -->
           <article class="brand-card reveal reveal-delay-1" data-sector="logistics" id="brand-wessland">
-            <div class="brand-card-visual logistics-bg" id="brand-visual-wessland"></div>
+            <div class="brand-card-visual logistics-bg" id="brand-visual-wessland" role="img" aria-label="Wessland Logistics Europe - European shipping and freight cargo operations"></div>
             <div class="brand-card-body">
               <p class="brand-card-sector">05 · Logistics &amp; Cargo</p>
               <h2 class="brand-card-name">Wessland Logistics Europe</h2>
@@ -115,7 +121,7 @@
 
           <!-- 06 Kochuparambil Exporters -->
           <article class="brand-card reveal reveal-delay-2" data-sector="trade" id="brand-kochuparambil">
-            <div class="brand-card-visual trade-bg" id="brand-visual-kochuparambil"></div>
+            <div class="brand-card-visual trade-bg" id="brand-visual-kochuparambil" role="img" aria-label="Kochuparambil Exporters - Global export trade and container freight"></div>
             <div class="brand-card-body">
               <p class="brand-card-sector">06 · Export Trade</p>
               <h2 class="brand-card-name">Kochuparambil Exporters</h2>
@@ -134,24 +140,22 @@
         <div class="section-header centered" id="sector-highlights-header">
           <span class="eyebrow">Our Reach</span>
           <h2 class="section-title">Sectors We Lead</h2>
-          <p class="section-desc">Our multi-sector approach means we are always close to what matters most — delivering
-            quality where it counts.</p>
+          <p class="section-desc">Our multi-sector approach means we are always close to what matters most &mdash; delivering quality where it counts.</p>
         </div>
-        <div class="sectors-grid" id="sector-highlights-grid">
-          <article class="sector-card reveal reveal-delay-1" id="sector-highlight-beauty">
-            <div class="sector-icon" aria-hidden="true">
+        <div class="sector-highlights-grid" id="sector-highlights-grid">
+          <article class="sector-highlight-card reveal reveal-delay-1" id="sector-highlight-beauty">
+            <div class="sector-highlight-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 2C6 2 4 7 4 10c0 4 2 7 8 10 6-3 8-6 8-10 0-3-2-8-8-8z" />
                 <path d="M12 2v20" />
               </svg>
             </div>
-            <h3 class="sector-name">Beauty</h3>
-            <p class="sector-desc">Premium, authentic beauty experiences that celebrate who you are — crafted with real
-              ingredients and real intention.</p>
+            <h3 class="sector-highlight-name">Beauty</h3>
+            <p class="sector-highlight-desc">Premium, authentic beauty experiences that celebrate who you are &mdash; crafted with real ingredients and real intention.</p>
           </article>
-          <article class="sector-card reveal reveal-delay-2" id="sector-highlight-logistics">
-            <div class="sector-icon" aria-hidden="true">
+          <article class="sector-highlight-card reveal reveal-delay-2" id="sector-highlight-logistics">
+            <div class="sector-highlight-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="1" y="3" width="15" height="13" rx="1" />
@@ -160,12 +164,11 @@
                 <circle cx="18.5" cy="18.5" r="2.5" />
               </svg>
             </div>
-            <h3 class="sector-name">Logistics</h3>
-            <p class="sector-desc">Efficient, reliable, and technology-driven logistics that power businesses and
-              connect people to the things they need.</p>
+            <h3 class="sector-highlight-name">Logistics</h3>
+            <p class="sector-highlight-desc">Efficient, reliable, and technology-driven logistics that power businesses and connect people to the things they need.</p>
           </article>
-          <article class="sector-card reveal reveal-delay-3" id="sector-highlight-food">
-            <div class="sector-icon" aria-hidden="true">
+          <article class="sector-highlight-card reveal reveal-delay-3" id="sector-highlight-food">
+            <div class="sector-highlight-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
@@ -175,45 +178,53 @@
                 <line x1="14" y1="1" x2="14" y2="4" />
               </svg>
             </div>
-            <h3 class="sector-name">Food</h3>
-            <p class="sector-desc">Curated food brands that bring together tradition, flavour, and nutrition — elevating
-              everyday eating into something worth savouring.</p>
+            <h3 class="sector-highlight-name">Food</h3>
+            <p class="sector-highlight-desc">Curated food brands that bring together tradition, flavour, and nutrition &mdash; elevating everyday eating into something worth savouring.</p>
           </article>
-          <article class="sector-card reveal reveal-delay-4" id="sector-highlight-healthcare">
-            <div class="sector-icon" aria-hidden="true">
+          <article class="sector-highlight-card reveal reveal-delay-4" id="sector-highlight-healthcare">
+            <div class="sector-highlight-icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
               </svg>
             </div>
-            <h3 class="sector-name">Healthcare</h3>
-            <p class="sector-desc">Trusted, transparent healthcare products and services that put human wellbeing at the
-              centre of every decision.</p>
+            <h3 class="sector-highlight-name">Healthcare</h3>
+            <p class="sector-highlight-desc">Trusted, transparent healthcare products and services that put human wellbeing at the centre of every decision.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- MARQUEE -->
-    <div class="marquee-strip" id="marquee-strip" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Craft &nbsp;·&nbsp; Clarity &nbsp;·&nbsp; Character &nbsp;·&nbsp;</span>
-        <span>Beauty &nbsp;·&nbsp; Logistics &nbsp;·&nbsp; Food &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp;</span>
-        <span>Craft &nbsp;·&nbsp; Clarity &nbsp;·&nbsp; Character &nbsp;·&nbsp;</span>
-        <span>Beauty &nbsp;·&nbsp; Logistics &nbsp;·&nbsp; Food &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp;</span>
-        <span>Craft &nbsp;·&nbsp; Clarity &nbsp;·&nbsp; Character &nbsp;·&nbsp;</span>
-        <span>Beauty &nbsp;·&nbsp; Logistics &nbsp;·&nbsp; Food &nbsp;·&nbsp; Healthcare &nbsp;·&nbsp;</span>
+    <div class="cert-strip" id="brands-marquee-strip" role="region" aria-label="Brand pillars">
+      <div class="cert-track">
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Craft</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Clarity</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Character</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Beauty &amp; Skincare</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Logistics &amp; Cargo</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Food &amp; Gourmet</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Healthcare</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Export Trade</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Craft</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Clarity</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Character</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Beauty &amp; Skincare</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Logistics &amp; Cargo</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Food &amp; Gourmet</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Healthcare</span>
+        <span class="cert-item"><span class="cert-item-dot" aria-hidden="true"></span>Export Trade</span>
       </div>
     </div>
 
     <!-- CTA -->
-    <section class="section contact-teaser" id="brands-cta-section">
-      <div class="container">
-        <div class="contact-teaser-inner reveal">
-          <h2 class="section-title">Have a brand idea<br>that fits our vision?</h2>
-          <p class="body-text">We're always looking for bold ideas and strong partners to build the next RegineLand
-            brand. Let's talk.</p>
-          <a href="contact.html" class="btn btn-primary" id="brands-contact-cta">Start a Conversation</a>
+    <section class="section-sm section-dark" id="brands-cta-section">
+      <div class="container" style="text-align:center;">
+        <h2 class="section-title section-title-light reveal" style="margin-bottom:16px;">Have a brand idea<br>that fits our vision?</h2>
+        <p class="lead lead-light reveal d1" style="max-width:540px; margin:0 auto 32px;">We're always looking for bold ideas and strong partners to build the next RegineLand brand. Let's talk.</p>
+        <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;" class="reveal d2">
+          <a href="contact.html" class="btn btn-gold btn-lg" id="brands-contact-cta">Start a Conversation</a>
+          <a href="about.html" class="btn btn-outline-white btn-lg" id="brands-about-cta">About Our Group</a>
         </div>
       </div>
     </section>
