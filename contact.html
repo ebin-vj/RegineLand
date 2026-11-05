@@ -69,7 +69,7 @@
     <!-- SMART CONTACT FORM -->
     <section class="section" id="quote" aria-labelledby="contact-heading">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 72px; align-items: start;">
+        <div class="contact-layout-grid" id="contact-layout-grid">
 
           <!-- Left: Info panel -->
           <div id="contact-info-panel">
@@ -235,13 +235,13 @@
                 </div>
 
                 <div class="form-group full">
-                  <label
-                    style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; font-size: 0.82rem; color: var(--text-secondary);">
+                  <label class="form-checkbox-label" id="contact-gdpr-label">
                     <input type="checkbox" id="contact-gdpr" name="gdpr" required
                       style="margin-top: 2px; accent-color: var(--navy);">
                     <span>I agree to the processing of my personal data in accordance with RegineLand Group's <a
-                        href="#" style="color: var(--blue);">Privacy Policy</a>. *</span>
+                        href="resources.html#compliance" style="color: var(--blue);">Privacy Policy</a>. *</span>
                   </label>
+                  <p class="form-checkbox-error" id="contact-gdpr-error" role="alert">Please accept the privacy policy to send your message.</p>
                 </div>
               </div>
 
