@@ -145,7 +145,7 @@
             { id: 'nav-industries', label: '🌐 Le Nostre Industrie nel Mondo', href: 'sectors.html#industries' }
           ]
         },
-        { id: 'nav-brands', label: 'Brand', href: '../brands.html', page: 'brands' },
+        { id: 'nav-brands', label: 'Brand', href: 'brands.html', page: 'brands' },
         { id: 'nav-network', label: 'Rete Globale', href: 'network.html', page: 'network' },
         { id: 'nav-resources', label: 'Risorse', href: 'resources.html', page: 'resources' },
         { id: 'nav-contact', label: 'Contatti', href: 'contact.html', page: 'contact' }
@@ -160,7 +160,7 @@
         { label: 'Storia & Visione', href: 'about.html#history', id: 'footer-history' },
         { label: 'Rete Globale', href: 'network.html', id: 'footer-network' },
         { label: 'Gruppo & Partner', href: 'about.html#group', id: 'footer-group' },
-        { label: 'Le Nostre Industrie', href: 'sectors.html#industries', id: 'footer-brands' },
+        { label: 'I Nostri Brand', href: 'brands.html', id: 'footer-brands' },
         { label: 'Risorse & Notizie', href: 'resources.html', id: 'footer-resources' }
       ],
       colSectors: 'Settori',
@@ -200,7 +200,7 @@
       home: 'index.html',
       about: 'about.html',
       sectors: 'sectors.html',
-      brands: isItalian ? 'brands.html' : 'sectors.html#industries',
+      brands: 'brands.html',
       network: 'network.html',
       resources: 'resources.html',
       contact: 'contact.html'
@@ -438,7 +438,15 @@
     var toggle = document.getElementById('nav-toggle');
     var menu   = document.getElementById('nav-menu');
     if (toggle && menu) {
-      toggle.onclick = function() {
+      function closeNav() {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        var lines = toggle.querySelectorAll('.hamburger-line');
+        lines.forEach(function(l) { l.style.transform = ''; l.style.opacity = ''; });
+      }
+
+      toggle.onclick = function(e) {
+        if (e) e.stopPropagation();
         var open = menu.classList.toggle('open');
         toggle.setAttribute('aria-expanded', String(open));
         var lines = toggle.querySelectorAll('.hamburger-line');
@@ -453,13 +461,27 @@
 
       menu.querySelectorAll('a').forEach(function(a) {
         a.onclick = function() {
-          menu.classList.remove('open');
-          toggle.setAttribute('aria-expanded', 'false');
-          toggle.querySelectorAll('.hamburger-line').forEach(function(l) {
-            l.style.transform = ''; l.style.opacity = '';
-          });
+          closeNav();
         };
       });
+
+      document.addEventListener('click', function(e) {
+        var curToggle = document.getElementById('nav-toggle');
+        var curMenu   = document.getElementById('nav-menu');
+        if (curMenu && curMenu.classList.contains('open')) {
+          if (curToggle && !curToggle.contains(e.target) && !curMenu.contains(e.target)) {
+            closeNav();
+          }
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeNav();
+        }
+      });
+
+      window.__regineland_nav_initialized = true;
     }
   }
 
@@ -468,5 +490,5 @@
     mount();
   }
   document.addEventListener('DOMContentLoaded', mount);
-  window.addEventListener('load', mount);
+  if (typeof window !== 'undefined' && window.addEventListener) { window.addEventListener('load', mount); }
 })();
